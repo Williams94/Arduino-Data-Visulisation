@@ -3,8 +3,8 @@
  */
 
 $("#login").click(function(){
-
-    window.location.replace("http://localhost:8080/home.html");
+    console.log("clicked");
+    window.location.href='/home.html';
 
 
 });
