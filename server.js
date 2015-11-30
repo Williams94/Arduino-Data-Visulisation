@@ -6,6 +6,7 @@ var http = require('http');
 var url = require("url");
 var socketio = require('socket.io');
 var SerialPort = require("serialport").SerialPort;
+var db = require("./database.js");
 
 const PORT = 8080;
 var socketServer;
@@ -27,8 +28,8 @@ function startServer(route, handle, debug){
     });
 
 
-    /*serialListener(debug);
-    initSocketIO(httpServer,debug);*/
+    serialListener(debug);
+    //initSocketIO(httpServer,debug);
 }
 
 /*function initSocketIO(httpServer, debug)
@@ -51,35 +52,50 @@ function startServer(route, handle, debug){
         });
 
     });
-}
+}*/
 
 // Listen to serial port
 function serialListener(debug)
 {
     var receivedData = "";
     serialPort = new SerialPort(portName, {
-        baudrate: 9600,
+        baudrate: 115200/*,
         // defaults for Arduino serial communication
         dataBits: 8,
         parity: 'none',
         stopBits: 1,
-        flowControl: false
+        flowControl: false*/
     });
 
     serialPort.on("open", function () {
         console.log('open serial communication');
         // Listens to incoming data
+
+        var sensorValues = "";
+
         serialPort.on('data', function(data) {
-            //console.log(data.toString());
-            /!*receivedData += data.toString();
-            if (receivedData .indexOf('E') >= 0 && receivedData .indexOf('B') >= 0) {
+            var date = new Date();
+            sensorValues = date.getUTCDate() + "/" + date.getMonth() + "/" + date.getFullYear() + " "
+                            + date.getHours() + ":" + date.getMinutes() + " "
+                            + data.toString().trim();
+            console.log(sensorValues + " " + sensorValues.length);
+
+
+            if (sensorValues.length == 29){
+                db.insert(db, sensorValues);
+                sensorValues = "";
+            }
+
+
+            /*receivedData += data.toString();
+            if (receivedData .indexOf('E') >= 0  && receivedData .indexOf('B') >= 0) {
                 sendData = receivedData .substring(receivedData .indexOf('B') + 1, receivedData .indexOf('E'));
                 receivedData = '';
-            }
-            // send the incoming data to browser with websockets.*!/
-            socketServer.emit('update', sendData);
+            }*/
+            // send the incoming data to browser with websockets.
+            //socketServer.emit('update', sendData);
         });
     });
-}*/
+}
 
 exports.start = startServer;

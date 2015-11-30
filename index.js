@@ -16,6 +16,7 @@ handle["/bootstrap"] = requestHandler.bootstrap;
 handle["css"] = requestHandler.css;
 handle["js"] = requestHandler.js;
 handle["html"] = requestHandler.html;
+handle["images"] = requestHandler.images;
 /*handle["/css/bootstrap.css"] = requestHandler.bootstrapCSS;
 handle["/js/bootstrap.min.js"] = requestHandler.bootstrapJS;*/
 

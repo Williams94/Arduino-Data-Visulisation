@@ -48,6 +48,14 @@ function html(response, pathname){
     response.end(html);
 }
 
+function images(response, pathname){
+    console.log("Request for: " + pathname);
+    response.writeHead(200, {"Content-Type" : "image/x-icon"});
+    var image = fs.readFileSynch(__dirname + "/images/" + pathname);
+    response.end(image);
+
+}
+
 
 
 exports.home = home;
@@ -56,4 +64,5 @@ exports.bootstrap = bootstrap;
 exports.css = css;
 exports.js = js;
 exports.html = html;
+exports.images = images;
 
