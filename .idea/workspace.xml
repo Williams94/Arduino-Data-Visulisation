@@ -2,523 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c816d266-bdbb-46ab-8187-66e16fff42d1" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/.gitattributes" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/.jscsrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/.jshintrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/CHANGELOG.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/CONTRIBUTING.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/Gruntfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/appveyor.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/benchmark/benchmark.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/benchmark/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/bin/lessc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/browser.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/build.gradle" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/build/amd.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/build/build.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/build/require-rhino.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/build/rhino-header.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/build/rhino-modules.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/build/tasks/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/dist/less.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/dist/less.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/gradle/wrapper/gradle-wrapper.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/gradle/wrapper/gradle-wrapper.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/gradlew" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/gradlew.bat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less-browser/add-default-options.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less-browser/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less-browser/browser.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less-browser/cache.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less-browser/error-reporting.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less-browser/file-manager.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less-browser/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less-browser/log-listener.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less-browser/utils.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less-node/environment.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less-node/file-manager.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less-node/fs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less-node/image-size.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less-node/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less-node/lessc-helper.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less-node/plugin-loader.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less-node/url-file-manager.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less-rhino/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/contexts.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/data/colors.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/data/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/data/unit-conversions.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/environment/abstract-file-manager.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/environment/environment-api.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/environment/environment.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/environment/file-manager-api.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/functions/color-blending.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/functions/color.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/functions/data-uri.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/functions/default.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/functions/function-caller.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/functions/function-registry.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/functions/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/functions/math-helper.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/functions/math.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/functions/number.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/functions/string.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/functions/svg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/functions/types.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/import-manager.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/less-error.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/logger.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/parse-tree.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/parse.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/parser/chunker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/parser/parser-input.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/parser/parser.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/plugin-manager.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/plugins/function-importer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/render.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/source-map-builder.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/source-map-output.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/transform-tree.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/tree/alpha.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/tree/anonymous.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/tree/assignment.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/tree/attribute.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/tree/call.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/tree/color.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/tree/combinator.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/tree/comment.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/tree/condition.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/tree/debug-info.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/tree/detached-ruleset.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/tree/dimension.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/tree/directive.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/tree/element.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/tree/expression.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/tree/extend.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/tree/import.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/tree/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/tree/javascript.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/tree/js-eval-node.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/tree/keyword.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/tree/media.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/tree/mixin-call.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/tree/mixin-definition.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/tree/negative.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/tree/node.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/tree/operation.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/tree/paren.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/tree/quoted.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/tree/rule.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/tree/ruleset-call.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/tree/ruleset.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/tree/selector.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/tree/unicode-descriptor.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/tree/unit.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/tree/url.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/tree/value.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/tree/variable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/utils.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/visitors/extend-visitor.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/visitors/import-sequencer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/visitors/import-visitor.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/visitors/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/visitors/join-selector-visitor.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/visitors/to-css-visitor.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/less/visitors/visitor.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/source-map/source-map-0.1.31.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/source-map/source-map-footer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/lib/source-map/source-map-header.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/css/global-vars/simple.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/css/modify-vars/simple.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/css/postProcessor/postProcessor.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/css/relative-urls/urls.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/css/rootpath-relative/urls.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/css/rootpath/urls.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/css/urls.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/jasmine-jsreporter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/less/console-errors/test-error.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/less/console-errors/test-error.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/less/global-vars/simple.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/less/imports/urls.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/less/imports/urls2.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/less/modify-vars/imports/simple2.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/less/modify-vars/simple.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/less/nested-gradient-with-svg-gradient/mixin-consumer.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/less/nested-gradient-with-svg-gradient/svg-gradient-mixin.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/less/postProcessor/postProcessor.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/less/relative-urls/urls.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/less/rootpath-relative/urls.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/less/rootpath/urls.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/less/urls.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/runner-VisitorPlugin-options.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/runner-VisitorPlugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/runner-browser-options.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/runner-browser-spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/runner-console-errors.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/runner-errors-options.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/runner-errors-spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/runner-filemanagerPlugin-options.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/runner-filemanagerPlugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/runner-global-vars-options.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/runner-global-vars-spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/runner-legacy-options.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/runner-legacy-spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/runner-main-options.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/runner-main-spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/runner-modify-vars-options.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/runner-modify-vars-spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/runner-no-js-errors-options.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/runner-no-js-errors-spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/runner-postProcessor-options.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/runner-postProcessor.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/runner-postProcessorPlugin-options.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/runner-postProcessorPlugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/runner-preProcessorPlugin-options.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/runner-preProcessorPlugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/runner-production-options.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/runner-production-spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/runner-relative-urls-options.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/runner-relative-urls-spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/runner-rootpath-options.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/runner-rootpath-relative-options.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/runner-rootpath-relative-spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/runner-rootpath-spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/runner-strict-units-options.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/runner-strict-units-spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/browser/test-runner-template.tmpl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/copy-bom.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/charsets.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/colors.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/comments.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/comments2.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/compression/compression.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/css-3.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/css-escapes.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/css-guards.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/css.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/debug/linenumbers-all.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/debug/linenumbers-comments.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/debug/linenumbers-mediaquery.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/detached-rulesets.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/directives-bubling.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/empty.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/extend-chaining.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/extend-clearfix.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/extend-exact.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/extend-media.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/extend-nest.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/extend-selector.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/extend.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/extract-and-length.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/filemanagerPlugin/filemanager.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/functions.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/globalVars/extended.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/globalVars/simple.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/ie-filters.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/import-inline.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/import-interpolation.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/import-once.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/import-reference.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/import.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/include-path-string/include-path-string.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/include-path/include-path.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/javascript.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/lazy-eval.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/legacy/legacy.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/media.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/merge.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/mixins-args.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/mixins-closure.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/mixins-guards-default-func.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/mixins-guards.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/mixins-important.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/mixins-interpolated.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/mixins-named-args.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/mixins-nested.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/mixins-pattern.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/mixins.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/modifyVars/extended.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/no-output.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/operations.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/parens.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/plugin.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/postProcessorPlugin/postProcessor.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/preProcessorPlugin/preProcessor.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/property-name-interp.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/rulesets.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/scope.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/selectors.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/static-urls/urls.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/strict-units/strict-units.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/strings.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/url-args/urls.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/urls.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/variables-in-at-rules.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/variables.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/visitorPlugin/visitor.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/css/whitespace.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/data/data-uri-fail.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/data/image.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/data/image.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/data/page.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less-test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/charsets.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/colors.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/comments.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/comments2.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/compression/compression.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/css-3.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/css-escapes.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/css-guards.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/css.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/debug/import/test.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/debug/linenumbers.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/detached-rulesets.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/directives-bubling.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/empty.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/add-mixed-units.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/add-mixed-units.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/add-mixed-units2.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/add-mixed-units2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/at-rules-undefined-var.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/at-rules-undefined-var.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/bad-variable-declaration1.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/bad-variable-declaration1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/color-func-invalid-color.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/color-func-invalid-color.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/color-invalid-hex-code.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/color-invalid-hex-code.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/color-invalid-hex-code2.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/color-invalid-hex-code2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/css-guard-default-func.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/css-guard-default-func.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/detached-ruleset-1.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/detached-ruleset-1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/detached-ruleset-2.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/detached-ruleset-2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/detached-ruleset-3.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/detached-ruleset-3.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/detached-ruleset-5.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/detached-ruleset-5.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/detached-ruleset-6.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/detached-ruleset-6.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/divide-mixed-units.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/divide-mixed-units.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/extend-no-selector.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/extend-no-selector.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/extend-not-at-end.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/extend-not-at-end.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/import-malformed.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/import-malformed.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/import-missing.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/import-missing.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/import-no-semi.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/import-no-semi.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/import-subfolder1.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/import-subfolder1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/import-subfolder2.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/import-subfolder2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/imports/import-subfolder1.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/imports/import-subfolder2.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/imports/import-test.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/imports/subfolder/mixin-not-defined.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/imports/subfolder/parse-error-curly-bracket.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/javascript-error.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/javascript-error.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/javascript-undefined-var.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/javascript-undefined-var.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/mixed-mixin-definition-args-1.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/mixed-mixin-definition-args-1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/mixed-mixin-definition-args-2.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/mixed-mixin-definition-args-2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/mixin-not-defined.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/mixin-not-defined.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/mixin-not-matched.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/mixin-not-matched.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/mixin-not-matched2.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/mixin-not-matched2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/mixin-not-visible-in-scope-1.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/mixin-not-visible-in-scope-1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/mixins-guards-default-func-1.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/mixins-guards-default-func-1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/mixins-guards-default-func-2.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/mixins-guards-default-func-2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/mixins-guards-default-func-3.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/mixins-guards-default-func-3.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/multiple-guards-on-css-selectors.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/multiple-guards-on-css-selectors.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/multiple-guards-on-css-selectors2.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/multiple-guards-on-css-selectors2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/multiply-mixed-units.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/multiply-mixed-units.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/parens-error-1.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/parens-error-1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/parens-error-2.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/parens-error-2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/parens-error-3.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/parens-error-3.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/parse-error-curly-bracket.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/parse-error-curly-bracket.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/parse-error-media-no-block-1.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/parse-error-media-no-block-1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/parse-error-media-no-block-2.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/parse-error-media-no-block-2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/parse-error-media-no-block-3.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/parse-error-media-no-block-3.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/parse-error-missing-bracket.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/parse-error-missing-bracket.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/parse-error-missing-parens.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/parse-error-missing-parens.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/parse-error-with-import.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/parse-error-with-import.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/percentage-missing-space.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/percentage-missing-space.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/percentage-non-number-argument.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/percentage-non-number-argument.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/property-asterisk-only-name.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/property-asterisk-only-name.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/property-ie5-hack.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/property-ie5-hack.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/property-in-root.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/property-in-root.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/property-in-root2.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/property-in-root2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/property-in-root3.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/property-in-root3.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/property-interp-not-defined.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/property-interp-not-defined.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/recursive-variable.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/recursive-variable.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/single-character.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/single-character.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/svg-gradient1.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/svg-gradient1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/svg-gradient2.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/svg-gradient2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/svg-gradient3.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/svg-gradient3.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/svg-gradient4.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/svg-gradient4.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/svg-gradient5.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/svg-gradient5.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/svg-gradient6.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/svg-gradient6.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/unit-function.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/errors/unit-function.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/extend-chaining.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/extend-clearfix.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/extend-exact.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/extend-media.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/extend-nest.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/extend-selector.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/extend.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/extract-and-length.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/filemanagerPlugin/colors.test" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/filemanagerPlugin/filemanager.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/functions.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/globalVars/extended.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/globalVars/extended.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/globalVars/simple.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/globalVars/simple.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/ie-filters.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/import-inline.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/import-interpolation.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/import-once.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/import-reference.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/import.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/import/css-import.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/import/deeper/deeper-2/url-import-2.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/import/deeper/deeper-2/url-import.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/import/deeper/import-once-test-a.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/import/deeper/url-import.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/import/import-and-relative-paths-test.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/import/import-charset-test.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/import/import-inline-invalid-css.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/import/import-interpolation.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/import/import-interpolation2.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/import/import-once-test-c.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/import/import-reference.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/import/import-test-a.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/import/import-test-b.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/import/import-test-c.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/import/import-test-d.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/import/import-test-e.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/import/import-test-f.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/import/imports/font.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/import/imports/logo.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/import/interpolation-vars.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/import/invalid-css.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/import/urls.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/include-path-string/include-path-string.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/include-path/include-path.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/javascript.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/lazy-eval.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/legacy/legacy.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/media.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/merge.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/mixins-args.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/mixins-closure.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/mixins-guards-default-func.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/mixins-guards.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/mixins-important.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/mixins-interpolated.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/mixins-named-args.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/mixins-nested.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/mixins-pattern.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/mixins.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/modifyVars/extended.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/modifyVars/extended.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/nested-gradient-with-svg-gradient/mixin-consumer.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/nested-gradient-with-svg-gradient/svg-gradient-mixin.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/no-js-errors/no-js-errors.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/no-js-errors/no-js-errors.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/no-output.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/operations.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/parens.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/plugin.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/plugin/plugin-global.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/plugin/plugin-local.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/plugin/plugin-transitive.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/plugin/plugin-transitive.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/postProcessorPlugin/postProcessor.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/preProcessorPlugin/preProcessor.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/property-name-interp.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/rulesets.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/scope.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/selectors.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/sourcemaps-empty/empty.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/sourcemaps-empty/var-defs.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/sourcemaps/basic.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/sourcemaps/basic.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/sourcemaps/imported.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/static-urls/urls.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/strict-units/strict-units.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/strings.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/url-args/urls.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/urls.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/variables-in-at-rules.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/variables.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/visitorPlugin/visitor.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/less/whitespace.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/modify-vars.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/plugins/filemanager/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/plugins/postprocess/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/plugins/preprocess/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/plugins/visitor/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/rhino/test-header.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/sourcemaps/basic.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/less.js/test/sourcemaps/index.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/home.html" afterPath="$PROJECT_DIR$/html/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/index.html" afterPath="$PROJECT_DIR$/html/index.html" />
     </list>
     <ignored path="Arduino.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -575,18 +60,18 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.46875">
-              <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
+            <state vertical-scroll-proportion="-20.09375">
+              <caret line="49" column="36" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8376471">
-              <caret line="70" column="7" selection-start-line="70" selection-start-column="7" selection-end-line="70" selection-end-column="7" />
+            <state vertical-scroll-proportion="-20.09375">
+              <caret line="67" column="38" selection-start-line="67" selection-start-column="38" selection-end-line="67" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -604,10 +89,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="about.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="about.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html/about.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.84375">
+            <state vertical-scroll-proportion="0.10705882">
               <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
               <folding />
             </state>
@@ -668,12 +153,12 @@
         <option value="$PROJECT_DIR$/js/login.js" />
         <option value="$PROJECT_DIR$/js/arduino.js" />
         <option value="$PROJECT_DIR$/css/custom.css" />
-        <option value="$PROJECT_DIR$/html/index.html" />
         <option value="$PROJECT_DIR$/router.js" />
         <option value="$PROJECT_DIR$/requestHandlers.js" />
         <option value="$PROJECT_DIR$/css/custom.less" />
         <option value="$PROJECT_DIR$/html/about.html" />
         <option value="$PROJECT_DIR$/html/home.html" />
+        <option value="$PROJECT_DIR$/html/index.html" />
       </list>
     </option>
   </component>
@@ -1265,14 +750,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.46875">
-          <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/router.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1291,16 +768,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#47#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/custom.less">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.71875">
@@ -1312,18 +779,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/about.html">
+    <entry file="file://$PROJECT_DIR$/html/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.84375">
-          <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+        <state vertical-scroll-proportion="-20.09375">
+          <caret line="67" column="38" selection-start-line="67" selection-start-column="38" selection-end-line="67" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/home.html">
+    <entry file="file://$PROJECT_DIR$/html/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8376471">
-          <caret line="70" column="7" selection-start-line="70" selection-start-column="7" selection-end-line="70" selection-end-column="7" />
+        <state vertical-scroll-proportion="-20.09375">
+          <caret line="49" column="36" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#47#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10705882">
+          <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
           <folding />
         </state>
       </provider>
