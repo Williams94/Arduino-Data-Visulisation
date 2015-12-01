@@ -10,6 +10,7 @@ var extType = {
     ".html" : "text/html",
     ".js" : "text/javascript",
     ".css" : "text/css",
+    ".less" : "text/css",
     ".ico" : "image/x-icon",
     ".png" : "image/png",
     ".jpg" : "image/jpeg",
@@ -27,8 +28,13 @@ function css(response, pathname){
 function js(response, pathname){
     console.log("Request for: " + pathname);
     var ext = path.extname(pathname);
+    var js;
+    if (pathname == "/js/less.js"){
+        js = fs.readFileSync(__dirname + "/js/less.js/index.js");
+    } else {
+        js = fs.readFileSync(__dirname + pathname);
+    }
     response.writeHead(200, {"Content-Type" : extType[ext]});
-    var js = fs.readFileSync(__dirname + pathname);
     response.end(js);
 }
 

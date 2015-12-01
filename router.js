@@ -5,7 +5,7 @@
 function route(handle, pathname,response,request,debug) {
     console.log("Routing Request for: " + pathname);
 
-    if (pathname.indexOf(".css") >= 0){
+    if (pathname.indexOf(".css") >= 0 || pathname.indexOf(".less") >= 0){
         handle["css"](response, pathname);
     } else if (pathname.indexOf(".js") >= 0){
         handle["js"](response, pathname);

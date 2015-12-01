@@ -3,8 +3,5 @@
  */
 
 $("#login").click(function(){
-    console.log("clicked");
     window.location.href='/home.html';
-
-
 });
