@@ -22,7 +22,6 @@ function startDatabase(){
     });
 }
 
-
 var insertSensorValue = function(db, values) {
 
     var date = values.substring(0,10);
@@ -42,6 +41,11 @@ var insertSensorValue = function(db, values) {
         console.log("Stored: " + date + " " + time + " "  + light + " " + temp);
 };
 
+function fetch(amount){
+    return database.collection('sensorValues').find().sort({_id:-1}).limit(amount);
+
+}
+
 function login(){
 
 }
@@ -49,3 +53,4 @@ function login(){
 
 exports.start = startDatabase;
 exports.insert = insertSensorValue;
+exports.fetch = fetch;

@@ -4,7 +4,7 @@
 
 var http = require('http');
 var url = require("url");
-var socketio = require('socket.io');
+var io = require('socket.io');
 var SerialPort = require("serialport").SerialPort;
 var db = require("./database.js");
 
@@ -29,30 +29,26 @@ function startServer(route, handle, debug){
 
 
     //serialListener(debug);
-    //initSocketIO(httpServer,debug);
+    initSocketIO(httpServer,debug);
 }
 
-/*function initSocketIO(httpServer, debug)
+function initSocketIO(httpServer, debug)
 {
-    socketServer = socketio.listen(httpServer);
+    socketServer = io.listen(httpServer);
     if(debug == false){
         socketServer.set('log level', 1); // socket IO debug off
     }
     socketServer.on('connection', function (socket) {
         console.log("user connected");
-        socket.emit('onconnection', {pollOneValue:sendData});
-        socketServer.on('update', function(data) {
-            socket.emit('updateData',{pollOneValue:data});
-        });
-        socket.on('buttonval', function(data) {
-            serialPort.write(data + 'E');
-        });
-        socket.on('sliderval', function(data) {
-            serialPort.write(data + 'P');
-        });
+        //console.log(db.fetch(10));
+        socket.emit("data", {test : 1});
+
 
     });
-}*/
+    socketServer.on('disconnect', function() {
+        console.log("Client has disconnected");
+    });
+}
 
 // Listen to serial port
 function serialListener(debug)

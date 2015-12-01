@@ -1,11 +1,30 @@
 {
-  "name": "Arduino-Visulization",
-  "version": "0.0.2",
+  "name": "arduino-visulization",
+  "version": "0.0.3",
   "dependencies": {
-    "serialport": "latest",
     "socket.io": "latest"
   },
-  "dependencies": {
-    "socket.io": "latest"
-  }
+  "scripts": {
+    "start": "node server.js"
+  },
+  "description": "web application for visualising arduino sensor data",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Williams94/Arduino-Data-Visulisation.git"
+  },
+  "keywords": [
+    "node",
+    "d3",
+    "less",
+    "arduino",
+    "bootstrap"
+  ],
+  "author": "Ross Williams",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Williams94/Arduino-Data-Visulisation/issues"
+  },
+  "homepage": "https://github.com/Williams94/Arduino-Data-Visulisation#readme"
 }
