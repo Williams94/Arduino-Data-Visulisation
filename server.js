@@ -28,7 +28,7 @@ function startServer(route, handle, debug){
     });
 
 
-    serialListener(debug);
+    //serialListener(debug);
     //initSocketIO(httpServer,debug);
 }
 
@@ -82,7 +82,7 @@ function serialListener(debug)
 
 
             if (sensorValues.length == 29){
-                db.insert(db, sensorValues);
+                //db.insert(db, sensorValues);
                 sensorValues = "";
             }
 

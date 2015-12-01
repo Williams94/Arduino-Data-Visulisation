@@ -4,16 +4,16 @@
 
 function route(handle, pathname,response,request,debug) {
     console.log("Routing Request for: " + pathname);
-    //typeof probes the data type of handle[pathname]. So if
-    //handle[pathname] is a function (in both type and value)
-    //,then run that function.
-    if (typeof handle[pathname] === 'function') {
-        return handle[pathname](response,request);
-    } else if (pathname.indexOf(".css") >= 0){
+
+    if (pathname.indexOf(".css") >= 0){
         handle["css"](response, pathname);
     } else if (pathname.indexOf(".js") >= 0){
         handle["js"](response, pathname);
     } else if (pathname.indexOf(".html") >= 0 ){
+        handle["html"](response, pathname);
+    } else if (pathname.indexOf(".ico") >= 0 || pathname.indexOf("png") >= 0 || pathname.indexOf("jpg") >= 0 ){
+        handle["images"](response, pathname);
+    } else if (pathname == "/") {
         handle["html"](response, pathname);
     }
 

@@ -1,0 +1,11 @@
+{
+  "name": "Arduino-Visulization",
+  "version": "0.0.2",
+  "dependencies": {
+    "serialport": "latest",
+    "socket.io": "latest"
+  },
+  "dependencies": {
+    "socket.io": "latest"
+  }
+}

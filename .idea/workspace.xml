@@ -2,13 +2,194 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c816d266-bdbb-46ab-8187-66e16fff42d1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/rbwilliams.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/custom.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/assert-ae3a6898016ac675f843fdbeabce2f59/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/assert-ae3a6898016ac675f843fdbeabce2f59/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/assert-ae3a6898016ac675f843fdbeabce2f59/.zuul.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/assert-ae3a6898016ac675f843fdbeabce2f59/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/assert-ae3a6898016ac675f843fdbeabce2f59/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/assert-ae3a6898016ac675f843fdbeabce2f59/assert.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/assert-ae3a6898016ac675f843fdbeabce2f59/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/assert-ae3a6898016ac675f843fdbeabce2f59/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/bufferutil-2699da102dc99b4c361b64f4bbed0ddf/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/bufferutil-2699da102dc99b4c361b64f4bbed0ddf/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/bufferutil-2699da102dc99b4c361b64f4bbed0ddf/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/bufferutil-2699da102dc99b4c361b64f4bbed0ddf/binding.gyp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/bufferutil-2699da102dc99b4c361b64f4bbed0ddf/fallback.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/bufferutil-2699da102dc99b4c361b64f4bbed0ddf/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/bufferutil-2699da102dc99b4c361b64f4bbed0ddf/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/bufferutil-2699da102dc99b4c361b64f4bbed0ddf/src/bufferutil.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/mongodb-363a36544cec9d24d87ab69752b4c422/HISTORY.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/mongodb-363a36544cec9d24d87ab69752b4c422/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/mongodb-363a36544cec9d24d87ab69752b4c422/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/mongodb-363a36544cec9d24d87ab69752b4c422/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/mongodb-363a36544cec9d24d87ab69752b4c422/bug.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/mongodb-363a36544cec9d24d87ab69752b4c422/conf.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/mongodb-363a36544cec9d24d87ab69752b4c422/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/mongodb-363a36544cec9d24d87ab69752b4c422/lib/admin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/mongodb-363a36544cec9d24d87ab69752b4c422/lib/aggregation_cursor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/mongodb-363a36544cec9d24d87ab69752b4c422/lib/apm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/mongodb-363a36544cec9d24d87ab69752b4c422/lib/bulk/common.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/mongodb-363a36544cec9d24d87ab69752b4c422/lib/bulk/ordered.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/mongodb-363a36544cec9d24d87ab69752b4c422/lib/bulk/unordered.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/mongodb-363a36544cec9d24d87ab69752b4c422/lib/collection.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/mongodb-363a36544cec9d24d87ab69752b4c422/lib/command_cursor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/mongodb-363a36544cec9d24d87ab69752b4c422/lib/cursor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/mongodb-363a36544cec9d24d87ab69752b4c422/lib/db.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/mongodb-363a36544cec9d24d87ab69752b4c422/lib/gridfs/chunk.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/mongodb-363a36544cec9d24d87ab69752b4c422/lib/gridfs/grid_store.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/mongodb-363a36544cec9d24d87ab69752b4c422/lib/metadata.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/mongodb-363a36544cec9d24d87ab69752b4c422/lib/mongo_client.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/mongodb-363a36544cec9d24d87ab69752b4c422/lib/mongos.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/mongodb-363a36544cec9d24d87ab69752b4c422/lib/read_preference.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/mongodb-363a36544cec9d24d87ab69752b4c422/lib/replset.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/mongodb-363a36544cec9d24d87ab69752b4c422/lib/server.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/mongodb-363a36544cec9d24d87ab69752b4c422/lib/topology_base.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/mongodb-363a36544cec9d24d87ab69752b4c422/lib/url_parser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/mongodb-363a36544cec9d24d87ab69752b4c422/lib/utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/mongodb-363a36544cec9d24d87ab69752b4c422/load.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/mongodb-363a36544cec9d24d87ab69752b4c422/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/mongodb-363a36544cec9d24d87ab69752b4c422/sqlite-shell-osx-x86-3090100.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/mongodb-363a36544cec9d24d87ab69752b4c422/sqlite3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/mongodb-363a36544cec9d24d87ab69752b4c422/t.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/mongodb-363a36544cec9d24d87ab69752b4c422/t1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/mongodb-363a36544cec9d24d87ab69752b4c422/test_boot/boot.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/mongodb-363a36544cec9d24d87ab69752b4c422/test_boot/ca.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/mongodb-363a36544cec9d24d87ab69752b4c422/test_boot/client.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/mongodb-363a36544cec9d24d87ab69752b4c422/test_boot/client_password.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/mongodb-363a36544cec9d24d87ab69752b4c422/test_boot/connect.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/mongodb-363a36544cec9d24d87ab69752b4c422/test_boot/data/WiredTiger" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/mongodb-363a36544cec9d24d87ab69752b4c422/test_boot/data/WiredTiger.turtle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/mongodb-363a36544cec9d24d87ab69752b4c422/test_boot/data/WiredTiger.wt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/mongodb-363a36544cec9d24d87ab69752b4c422/test_boot/data/WiredTigerLAS.wt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/mongodb-363a36544cec9d24d87ab69752b4c422/test_boot/data/collection-0-757073248613337118.wt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/.jshintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/AUTHORS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/Gruntfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/appveyor.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/arduinoTest/arduinoEcho/arduinoEcho.ino" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/arduinoTest/requiresComPort.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/arduinoTest/stress.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/bin/serialportList.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/bin/serialportTerminal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/binding.gyp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/changelog.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/examples/break.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/examples/drain.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/examples/logger.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/examples/readdata.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/examples/reset.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/hwtest/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/hwtest/test1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/hwtest/test2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/appveyor.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/bin/node-pre-gyp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/bin/node-pre-gyp.cmd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/lib/build.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/lib/clean.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/lib/configure.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/lib/info.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/lib/install.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/lib/node-pre-gyp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/lib/package.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/lib/pre-binding.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/lib/publish.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/lib/rebuild.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/lib/reinstall.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/lib/reveal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/lib/testbinary.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/lib/testpackage.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/lib/unpublish.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/lib/util/abi_crosswalk.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/lib/util/compile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/lib/util/handle_gyp_opts.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/lib/util/nw-pre-gyp/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/lib/util/nw-pre-gyp/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/lib/util/s3_setup.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/lib/util/versioning.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/node_modules/mkdirp/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/node_modules/mkdirp/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/node_modules/mkdirp/bin/cmd.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/node_modules/mkdirp/bin/usage.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/node_modules/mkdirp/examples/pow.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/node_modules/mkdirp/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/node_modules/mkdirp/node_modules/minimist/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/node_modules/mkdirp/node_modules/minimist/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/node_modules/mkdirp/node_modules/minimist/example/parse.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/node_modules/mkdirp/node_modules/minimist/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/node_modules/mkdirp/node_modules/minimist/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/node_modules/mkdirp/node_modules/minimist/readme.markdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/node_modules/mkdirp/node_modules/minimist/test/dash.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/node_modules/mkdirp/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/node_modules/mkdirp/readme.markdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/node_modules/mkdirp/test/chmod.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/node_modules/mkdirp/test/clobber.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/node_modules/mkdirp/test/mkdirp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/node_modules/mkdirp/test/opts_fs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/node_modules/mkdirp/test/opts_fs_sync.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/node_modules/mkdirp/test/perm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/node_modules/mkdirp/test/perm_sync.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/node_modules/mkdirp/test/race.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/node_modules/mkdirp/test/rel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/node_modules/mkdirp/test/return.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/node_modules/mkdirp/test/return_sync.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/node_modules/mkdirp/test/root.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/node_modules/mkdirp/test/sync.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/node_modules/mkdirp/test/umask.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/node_modules/mkdirp/test/umask_sync.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/node_modules/node-pre-gyp/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/parsers.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/publish-binaries.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/sandbox/disconnect.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/serialport.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/src/serialport.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/src/serialport.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/src/serialport_poller.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/src/serialport_poller.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/src/serialport_unix.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/src/serialport_win.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/src/win/AutoHModule.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/src/win/AutoHandle.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/src/win/AutoHeapAlloc.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/src/win/disphelper.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/src/win/disphelper.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/src/win/enumser.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/src/win/enumser.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/src/win/stdafx.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/src/win/stdstring.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/test/parsers.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/test/serialport-basic.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/test/serialport-c.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/serialport-bd71a83b1f4af15c6659defede3bee7a/test_mocks/linux-hardware.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/socketio-5bb2a5309f6e31d8f8eb1568ccaf1376/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/socketio-5bb2a5309f6e31d8f8eb1568ccaf1376/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/socketio-5bb2a5309f6e31d8f8eb1568ccaf1376/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/utf-8-validate-fffe8a0e09cc566493d30e2156d73d5d/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/utf-8-validate-fffe8a0e09cc566493d30e2156d73d5d/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/utf-8-validate-fffe8a0e09cc566493d30e2156d73d5d/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/utf-8-validate-fffe8a0e09cc566493d30e2156d73d5d/binding.gyp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/utf-8-validate-fffe8a0e09cc566493d30e2156d73d5d/fallback.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/utf-8-validate-fffe8a0e09cc566493d30e2156d73d5d/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/utf-8-validate-fffe8a0e09cc566493d30e2156d73d5d/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.staging/utf-8-validate-fffe8a0e09cc566493d30e2156d73d5d/src/validation.cc" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Arduino.iml" afterPath="$PROJECT_DIR$/.idea/Arduino.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Arduino/light_sensor/light_sensor.ino" afterPath="$PROJECT_DIR$/Arduino/light_sensor/light_sensor.ino" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database.js" afterPath="$PROJECT_DIR$/database.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/home.html" afterPath="$PROJECT_DIR$/html/home.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requestHandlers.js" afterPath="$PROJECT_DIR$/requestHandlers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/router.js" afterPath="$PROJECT_DIR$/router.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
     </list>
     <ignored path="Arduino.iws" />
@@ -35,7 +216,7 @@
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+              <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -45,7 +226,7 @@
         <entry file="file://$PROJECT_DIR$/requestHandlers.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="54" column="24" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
+              <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -61,11 +242,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5997732">
-              <caret line="23" column="0" selection-start-line="22" selection-start-column="5" selection-end-line="23" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -86,7 +267,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.875">
+            <state vertical-scroll-proportion="-25.15625">
               <caret line="35" column="0" selection-start-line="33" selection-start-column="84" selection-end-line="35" selection-end-column="0" />
               <folding />
             </state>
@@ -96,8 +277,18 @@
       <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.90625">
-              <caret line="64" column="297" selection-start-line="64" selection-start-column="297" selection-end-line="64" selection-end-column="297" />
+            <state vertical-scroll-proportion="-13.65625">
+              <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="custom.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/custom.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.16235293">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -110,6 +301,8 @@
       <list>
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="package_json" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -120,17 +313,19 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/html/bootstrap.html" />
-        <option value="$PROJECT_DIR$/router.js" />
         <option value="$PROJECT_DIR$/js/arduino.js" />
         <option value="$PROJECT_DIR$/html/scripts.html" />
         <option value="$PROJECT_DIR$/expressServer.js" />
         <option value="$PROJECT_DIR$/html/index.html" />
         <option value="$PROJECT_DIR$/js/login.js" />
-        <option value="$PROJECT_DIR$/html/home.html" />
-        <option value="$PROJECT_DIR$/index.js" />
-        <option value="$PROJECT_DIR$/requestHandlers.js" />
-        <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/database.js" />
+        <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/requestHandlers.js" />
+        <option value="$PROJECT_DIR$/router.js" />
+        <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/html/home.html" />
+        <option value="$PROJECT_DIR$/css/custom.css" />
       </list>
     </option>
   </component>
@@ -174,6 +369,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -244,6 +441,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Arduino" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Arduino" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Arduino" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -254,8 +465,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -265,6 +474,8 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="javascript.nodejs.core.library.configured.version" value="0.12.2" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -373,6 +584,64 @@
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requestHandlers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="54" column="24" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="27" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#47#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="0" selection-start-line="33" selection-start-column="84" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="64" column="297" selection-start-line="64" selection-start-column="297" selection-end-line="64" selection-end-column="297" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
           <folding />
         </state>
@@ -390,9 +659,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#47#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -466,9 +732,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#47#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -534,9 +797,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#47#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -618,53 +878,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.875">
-          <caret line="35" column="0" selection-start-line="33" selection-start-column="84" selection-end-line="35" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.90625">
-          <caret line="64" column="297" selection-start-line="64" selection-start-column="297" selection-end-line="64" selection-end-column="297" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/login.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.18253969">
           <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#47#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requestHandlers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="54" column="24" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -678,10 +895,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requestHandlers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.054117646">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5997732">
-          <caret line="23" column="0" selection-start-line="22" selection-start-column="5" selection-end-line="23" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-25.15625">
+          <caret line="35" column="0" selection-start-line="33" selection-start-column="84" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.65625">
+          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16235293">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
