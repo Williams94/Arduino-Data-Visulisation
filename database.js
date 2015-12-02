@@ -25,20 +25,22 @@ function startDatabase(){
 var insertSensorValue = function(db, values) {
 
     var date = values.substring(0,10);
-    var time = values.substring(11, values.indexOf('L')-1);
+    var time = values.substring(10, values.indexOf('L')-1);
     var light = values.substring(values.indexOf('L')+2, values.indexOf('T')).trim();
-    var temp = values.substring(values.indexOf('T')+2).trim();
+    var temp = values.substring(values.indexOf('T')+2, values.indexOf('S')).trim();
+    var sound = values.substring(values.indexOf('S')+2).trim();
 
    database.collection('sensorValues').insertOne( {
         "date" : date,
         "time" : time,
         "light" : parseInt(light),
-        "temperature" : parseInt(temp)
+        "temperature" : parseInt(temp),
+        "sound" : parseInt(sound)
     }, function(err, result) {
         //assert.equal(err, null);
         //callback(result);
     });
-        console.log("Stored: " + date + " " + time + " "  + light + " " + temp);
+        console.log("Stored: " + date + " " + time + " "  + light + " " + temp + " " + sound);
 };
 
 function fetch(amount){

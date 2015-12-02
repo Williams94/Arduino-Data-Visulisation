@@ -28,7 +28,7 @@ function startServer(route, handle, debug){
     });
 
 
-    //serialListener(debug);
+    serialListener(debug);
     initSocketIO(httpServer,debug);
 }
 
@@ -71,14 +71,14 @@ function serialListener(debug)
 
         serialPort.on('data', function(data) {
             var date = new Date();
-            sensorValues = date.getUTCDate() + "/" + date.getMonth() + "/" + date.getFullYear() + " "
+            sensorValues = date.getUTCDate() + "/" + "12" /*date.getMonth()*/ + "/" + date.getFullYear() + " "
                             + date.getHours() + ":" + date.getMinutes() + " "
                             + data.toString().trim();
-            console.log(sensorValues + " " + sensorValues.length);
+            //console.log(sensorValues + " " + sensorValues.length);
 
 
-            if (sensorValues.length == 29){
-                //db.insert(db, sensorValues);
+            if (sensorValues.length == 34){
+                db.insert(db, sensorValues);
                 sensorValues = "";
             }
 
