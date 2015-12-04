@@ -8,6 +8,8 @@ var MongoClient = mongodb.MongoClient;
 //var ObjectId = require('mongodb').ObjectID;
 var url = 'mongodb://localhost:27017/arduinoData';
 var database = "";
+var collection = "";
+var values = "";
 
 function startDatabase(){
     // Use connect method to connect to the Server
@@ -19,6 +21,7 @@ function startDatabase(){
             console.log('Connection established to', url);
         }
         database = db;
+        collection = database.collection('sensorValues')
     });
 }
 
@@ -30,7 +33,7 @@ var insertSensorValue = function(db, values) {
     var temp = values.substring(values.indexOf('T')+2, values.indexOf('S')).trim();
     var sound = values.substring(values.indexOf('S')+2).trim();
 
-   database.collection('sensorValues').insertOne( {
+    collection.insertOne( {
         "date" : date,
         "time" : time,
         "light" : parseInt(light),
@@ -40,13 +43,23 @@ var insertSensorValue = function(db, values) {
         //assert.equal(err, null);
         //callback(result);
     });
-        console.log("Stored: " + date + " " + time + " "  + light + " " + temp + " " + sound);
+        //console.log("Stored: " + date + " " + time + " "  + light + " " + temp + " " + sound);
 };
 
-function fetch(amount){
-    return database.collection('sensorValues').find().sort({_id:-1}).limit(amount);
-
+function fetch(amount, callback){
+    collection.find().limit(amount).toArray(function (err, result) {
+        if (err) {
+            console.log(err);
+        } else if (result.length) {
+            //console.log('Found:', result);
+            callback(result);
+        } else {
+            console.log('No documents found');
+        }
+    });
 }
+
+
 
 function login(){
 

@@ -12,7 +12,7 @@ const PORT = 8080;
 var socketServer;
 var serialPort;
 var portName = 'COM4'; //change this to your Arduino port
-var sendData = "";
+//var sendData = "";
 
 function startServer(route, handle, debug){
 
@@ -28,11 +28,11 @@ function startServer(route, handle, debug){
     });
 
 
-    serialListener(debug);
-    initSocketIO(httpServer,debug);
+    //arduinoSerialConnection(debug);
+    webSocket(httpServer,debug);
 }
 
-function initSocketIO(httpServer, debug)
+function webSocket(httpServer, debug)
 {
     socketServer = io.listen(httpServer);
     if(debug == false){
@@ -40,8 +40,10 @@ function initSocketIO(httpServer, debug)
     }
     socketServer.on('connection', function (socket) {
         console.log("user connected");
-        //console.log(db.fetch(10));
-        socket.emit("data", {test : 1});
+        db.fetch(3, function(values){
+            console.log(values);
+            socket.emit("data", 1);
+        });
 
 
     });
@@ -51,16 +53,11 @@ function initSocketIO(httpServer, debug)
 }
 
 // Listen to serial port
-function serialListener(debug)
+function arduinoSerialConnection(debug)
 {
     var receivedData = "";
     serialPort = new SerialPort(portName, {
-        baudrate: 115200/*,
-        // defaults for Arduino serial communication
-        dataBits: 8,
-        parity: 'none',
-        stopBits: 1,
-        flowControl: false*/
+        baudrate: 115200
     });
 
     serialPort.on("open", function () {
@@ -74,22 +71,12 @@ function serialListener(debug)
             sensorValues = date.getUTCDate() + "/" + "12" /*date.getMonth()*/ + "/" + date.getFullYear() + " "
                             + date.getHours() + ":" + date.getMinutes() + " "
                             + data.toString().trim();
-            //console.log(sensorValues + " " + sensorValues.length);
 
 
             if (sensorValues.length == 34){
                 db.insert(db, sensorValues);
                 sensorValues = "";
             }
-
-
-            /*receivedData += data.toString();
-            if (receivedData .indexOf('E') >= 0  && receivedData .indexOf('B') >= 0) {
-                sendData = receivedData .substring(receivedData .indexOf('B') + 1, receivedData .indexOf('E'));
-                receivedData = '';
-            }*/
-            // send the incoming data to browser with websockets.
-            //socketServer.emit('update', sendData);
         });
     });
 }

@@ -10,7 +10,7 @@ var extType = {
     ".html" : "text/html",
     ".js" : "text/javascript",
     ".css" : "text/css",
-    ".less" : "text/less",
+    ".less" : "text/css",
     ".ico" : "image/x-icon",
     ".png" : "image/png",
     ".jpg" : "image/jpeg",
@@ -41,11 +41,12 @@ function js(response, pathname){
 function html(response, pathname){
     console.log("Request for: " + pathname);
     var ext = path.extname(pathname);
+    var html;
     response.writeHead(200, {"Content-Type" : extType[ext]});
     if (pathname == "/"){
-        var html = fs.readFileSync(__dirname + "/html/" + "index.html");
+        html = fs.readFileSync(__dirname + "/html/" + "index.html");
     } else {
-        var html = fs.readFileSync(__dirname + "/html/" + pathname);
+        html = fs.readFileSync(__dirname + "/html/" + pathname);
     }
     response.end(html);
 }
@@ -54,7 +55,7 @@ function images(response, pathname){
     console.log("Request for: " + pathname);
     var ext = path.extname(pathname);
     response.writeHead(200, {"Content-Type" : extType[ext]});
-    var image = fs.readFileSynch(__dirname + "/images/" + pathname);
+    var image = fs.readFileSync(__dirname + "/images/" + pathname);
     response.end(image);
 
 }
