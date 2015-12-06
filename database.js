@@ -27,8 +27,8 @@ function startDatabase(){
 
 var insertSensorValue = function(db, values) {
 
-    var date = values.substring(0,10);
-    var time = values.substring(10, values.indexOf('L')-1);
+    var date = values.substring(0,10).trim();
+    var time = values.substring(10, values.indexOf('L')-1).trim();
     var light = values.substring(values.indexOf('L')+2, values.indexOf('T')).trim();
     var temp = values.substring(values.indexOf('T')+2, values.indexOf('S')).trim();
     var sound = values.substring(values.indexOf('S')+2).trim();
@@ -43,11 +43,11 @@ var insertSensorValue = function(db, values) {
         //assert.equal(err, null);
         //callback(result);
     });
-        //console.log("Stored: " + date + " " + time + " "  + light + " " + temp + " " + sound);
+        console.log("Stored: " + date + " " + time + " "  + light + " " + temp + " " + sound);
 };
 
 function fetch(amount, callback){
-    collection.find().limit(amount).toArray(function (err, result) {
+    collection.find().sort({_id: -1 }).limit(amount).toArray(function (err, result) {
         if (err) {
             console.log(err);
         } else if (result.length) {

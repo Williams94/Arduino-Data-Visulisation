@@ -12,6 +12,8 @@ const PORT = 8080;
 var socketServer;
 var serialPort;
 var portName = 'COM4'; //change this to your Arduino port
+var wSocket;
+var connected = false;
 //var sendData = "";
 
 function startServer(route, handle, debug){
@@ -28,7 +30,7 @@ function startServer(route, handle, debug){
     });
 
 
-    //arduinoSerialConnection(debug);
+    arduinoSerialConnection(debug);
     webSocket(httpServer,debug);
 }
 
@@ -39,12 +41,21 @@ function webSocket(httpServer, debug)
         socketServer.set('log level', 1); // socket IO debug off
     }
     socketServer.on('connection', function (socket) {
+        wSocket = socket;
+        connected = true;
         console.log("user connected");
-        db.fetch(3, function(values){
+
+        db.fetch(1, function(values){
             console.log(values);
-            socket.emit("data", 1);
+            socket.emit("data", values);
         });
 
+        socket.on("update", function (){
+            console.log("updating");
+           db.fetch(1, function(values){
+              socket.emit("update", values);
+           });
+        });
 
     });
     socketServer.on('disconnect', function() {
@@ -68,14 +79,19 @@ function arduinoSerialConnection(debug)
 
         serialPort.on('data', function(data) {
             var date = new Date();
-            sensorValues = date.getUTCDate() + "/" + "12" /*date.getMonth()*/ + "/" + date.getFullYear() + " "
-                            + date.getHours() + ":" + date.getMinutes() + " "
+
+            sensorValues = (date.getUTCDate()<10?'0':'') + date.getUTCDate() + "/" + "12" /*date.getMonth()*/ + "/" + date.getFullYear() + " "
+                            + date.getHours() + ":" + (date.getMinutes()<10?'0':'') + date.getMinutes() + " "
                             + data.toString().trim();
 
+            console.log(sensorValues + " " + sensorValues.length);
 
-            if (sensorValues.length == 34){
+            if (sensorValues.length == 36){
                 db.insert(db, sensorValues);
                 sensorValues = "";
+                if(connected){
+                    wSocket.emit("newValue");
+                }
             }
         });
     });
