@@ -13,21 +13,24 @@ var temp, light, sound, date, time = -1;
 
 var jumbotron = $(".jumbotron");
 
+var body;
+var svg;
+
 function socketInit(){
     socket  = io.connect("http://localhost:8080");
-    socket.on('data', function (recievedData) {
-        for (var key in recievedData[0]){
-            if (recievedData[0].hasOwnProperty(key) && key != "_id" && key != "date" && key != "time" && key != "temperature"){
-                values.push(recievedData[0][key]);
+    socket.on('data', function (receivedData) {
+        for (var key in receivedData[0]){
+            if (receivedData[0].hasOwnProperty(key) && key != "_id" && key != "date" && key != "time" && key != "temperature"){
+                values.push(receivedData[0][key]);
             }
         }
-        values.push(recievedData[0]["temperature"]);
+        values.push(receivedData[0]["temperature"]);
 
         light = values[0];
         temp = values[2];
         sound = values[3];
-        date = recievedData[0]["date"];
-        time = recievedData[0]["time"];
+        date = receivedData[0]["date"];
+        time = receivedData[0]["time"];
         draw();
 
         update(socket);
@@ -37,19 +40,27 @@ function socketInit(){
 function update(socket){
     socket.on("newValue", function(){
         console.log("new value");
-       socket.emit("update");
+        socket.emit("update");
     });
-    socket.on("update", function (data) {
-       console.log("updated" + " " + data);
+    socket.on("update", function (receivedData) {
+        values = [];
+        for (var key in receivedData[0]){
+            if (receivedData[0].hasOwnProperty(key) && key != "_id" && key != "date" && key != "time" && key != "temperature"){
+                values.push(receivedData[0][key]);
+            }
+        }
+        values.push(receivedData[0]["temperature"]);
+        console.log("updated" + " " + values);
+        reDraw();
     });
 }
 
 function draw(){
     console.log(values);
 
-    var body = d3.select(".jumbotron");
+    body = d3.select(".jumbotron");
 
-    var svg = body.append("svg")
+    svg = body.append("svg")
         .attr("width", jumbotron.width())
         .attr("height", jumbotron.height())
         .style("border", "1px solid black");
@@ -83,6 +94,24 @@ function draw(){
             return color;
         });
 
+}
+
+function reDraw(){
+    var circles = d3.selectAll("circle");
+
+    circles
+        .data(values)
+        .attr("r", function (d, i) {
+        if (i == 0) {
+            return d/5;
+        } else if (i == 1){
+            return d;
+        } else if (i == 2){
+            return d;
+        }
+    });
+
+    console.log(circles);
 }
 
 window.onload = function() {

@@ -38,12 +38,6 @@
     
     String data = "L: " + light + " T: " + temp + " S: " + sound;
 
-   //Serial.println("START"); 
-   //Serial.println("L");
-   //Serial.println(lightSensorValue);
-   //Serial.println("T"); 
-   //Serial.println(tempSensorValue);
-   //Serial.println("END");
    Serial.println(data);
    Serial.flush();
    
