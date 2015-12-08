@@ -30,7 +30,7 @@ function startServer(route, handle, debug){
     });
 
 
-    //arduinoSerialConnection(debug);
+    arduinoSerialConnection(debug);
     webSocket(httpServer,debug);
 }
 

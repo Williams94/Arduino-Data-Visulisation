@@ -5,30 +5,27 @@ $("#about").click(function(){
     window.location.href='/about.html';
 });
 
-//var io = require("socket.io");
 var socket;
-var theData = [1];
 var values = [];
-var temp, light, sound, date, time = -1;
-var legendX = 975;
-var legendY = 50;
+var legendX = 900;
+var legendY = 80;
 var legendValues = [
     {
-        "name" : "- light",
+        "name" : "- light (lux)",
         "x" : legendX,
         "y" : legendY,
         "r" : 10,
         "color" : "yellow"
     } ,
     {
-        "name" : "- temperature",
+        "name" : "- temperature (°C)",
         "x" : legendX,
         "y" : legendY + 30,
         "r" : 10,
         "color" : "red"
     } ,
     {
-        "name" : "- sound",
+        "name" : "- sound (dB)",
         "x" : legendX,
         "y" : legendY + 60,
         "r" : 10,
@@ -44,19 +41,31 @@ var svg;
 
 function socketInit(){
     socket  = io.connect("http://localhost:8080");
-    socket.on('data', function (receivedData) {
-        for (var key in receivedData[0]){
-            if (receivedData[0].hasOwnProperty(key) && key != "_id" && key != "date" && key != "time" && key != "temperature"){
-                values.push(receivedData[0][key]);
-            }
-        }
-        values.push(receivedData[0]["temperature"]);
 
-        /*light = values[0];
-        temp = values[2];
-        sound = values[3];
-        date = receivedData[0]["date"];
-        time = receivedData[0]["time"];*/
+    socket.on('data', function (receivedData) {
+        values = [
+            {
+                "name" : "light",
+                "x" : 150,
+                "y" : 150,
+                "r" : (receivedData[0]["light"]/5),
+                "color" : "yellow"
+            },
+            {
+                "name" : "sound",
+                "x" : 450,
+                "y" : 150,
+                "r" : receivedData[0]["sound"],
+                "color" : "blue"
+            },
+            {
+                "name" : "temp",
+                "x" : 600,
+                "y" : 150,
+                "r" : receivedData[0]["temperature"],
+                "color" : "red"
+            }];
+
         draw();
 
         update(socket);
@@ -69,14 +78,10 @@ function update(socket){
         socket.emit("update");
     });
     socket.on("update", function (receivedData) {
-        values = [];
-        for (var key in receivedData[0]){
-            if (receivedData[0].hasOwnProperty(key) && key != "_id" && key != "date" && key != "time" && key != "temperature"){
-                values.push(receivedData[0][key]);
-            }
-        }
-        values.push(receivedData[0]["temperature"]);
-        console.log("updated" + " " + values);
+        values[0]["r"] = receivedData[0]["light"]/5;
+        values[1]["r"] = receivedData[0]["sound"];
+        values[2]["r"] = receivedData[0]["temperature"];
+
         reDraw();
     });
 }
@@ -98,27 +103,59 @@ function draw(){
 
     var circleAtt = circles
         .attr("class", ".circle")
-        .attr("cx", 150)
-        .attr("cy", 150)
-        .attr("r", function (d, i) {
+        .attr("cx", function(d) {
+            return d.x;
+        })
+        .attr("cy", function(d){
+            return d.y;
+        })
+        .attr("r", function (d){
+            return d.r;
+        })
+        .style("fill", function(d){
+            return d.color;
+        });
+
+    var circleLabels = svg.selectAll(".circleLabel")
+        .data(values)
+        .enter()
+        .append("text")
+        .attr("class", ".circleLabel")
+        .attr("x", function (d, i) {
             if (i == 0) {
-                return d/5;
+                return d.x - 20;
             } else if (i == 1){
-                return d;
+                return d.x - 12;
             } else if (i == 2){
-                return d;
+                return d.x - 12;
             }
         })
-        .style("fill", function(d, i){
-            var color;
+        .attr("y", function (d, i) {
             if (i == 0) {
-                color = "yellow";
+                return d.y + 10;
             } else if (i == 1){
-                color = "blue";
+                return d.y + 8;
             } else if (i == 2){
-                color = "red";
+                return d.y + 5;
             }
-            return color;
+        })
+        .text(function (d, i){
+            if (i == 0){
+                return d.r * 5;
+            } else {
+                return d.r;
+            }
+        })
+        .attr("font-family", "sans-serif")
+        .attr("font-size", "20px")
+        .attr("fill", function (d, i) {
+            if (i == 0) {
+                return "black";
+            } else if (i == 1){
+                return "white";
+            } else if (i == 2){
+                return "white";
+            }
         });
 
     var legend = svg.selectAll(".legend")
@@ -171,21 +208,25 @@ function draw(){
 }
 
 function reDraw(){
-    var circles = d3.selectAll(".circle");
+    var circles = d3.selectAll("circle");
 
     circles
         .data(values)
-        .attr("r", function (d, i) {
-        if (i == 0) {
-            return d/5;
-        } else if (i == 1){
-            return d;
-        } else if (i == 2){
-            return d;
-        }
-    });
+        .attr("r", function (d){
+            return d.r;
+        });
 
-    console.log(circles);
+    var labels = d3.selectAll("text");
+
+    labels
+        .data(values)
+        .text(function (d, i){
+            if (i == 0){
+                return d.r * 5;
+            } else {
+                return d.r;
+            }
+        });
 }
 
 window.onload = function() {

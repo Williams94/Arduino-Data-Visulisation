@@ -4,12 +4,11 @@
 
 var mongodb = require('mongodb');
 var MongoClient = mongodb.MongoClient;
-//var assert = require('assert');
-//var ObjectId = require('mongodb').ObjectID;
 var url = 'mongodb://localhost:27017/arduinoData';
 var database = "";
 var collection = "";
 var values = "";
+var connected = false;
 
 function startDatabase(){
     // Use connect method to connect to the Server
@@ -21,7 +20,8 @@ function startDatabase(){
             console.log('Connection established to', url);
         }
         database = db;
-        collection = database.collection('sensorValues')
+        collection = database.collection('sensorValues');
+        connected = true;
     });
 }
 
@@ -47,6 +47,9 @@ var insertSensorValue = function(db, values) {
 };
 
 function fetch(amount, callback){
+    while(!connected){
+
+    }
     collection.find().sort({_id: -1 }).limit(amount).toArray(function (err, result) {
         if (err) {
             console.log(err);

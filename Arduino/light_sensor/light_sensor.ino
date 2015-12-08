@@ -41,7 +41,7 @@
    Serial.println(data);
    Serial.flush();
    
-   delay(5000);
+   delay(1000);
   }
 
 
