@@ -30,7 +30,7 @@ function startServer(route, handle, debug){
     });
 
 
-    arduinoSerialConnection(debug);
+    //arduinoSerialConnection(debug);
     webSocket(httpServer,debug);
 }
 
@@ -70,6 +70,7 @@ function arduinoSerialConnection(debug)
     serialPort = new SerialPort(portName, {
         baudrate: 115200
     });
+
 
     serialPort.on("open", function () {
         console.log('open serial communication');
