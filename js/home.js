@@ -60,9 +60,9 @@ function socketInit(){
             },
             {
                 "name" : "temp",
-                "x" : 600,
+                "x" : 650,
                 "y" : 150,
-                "r" : receivedData[0]["temperature"],
+                "r" : (receivedData[0]["temperature"] * 1.8),
                 "color" : "red"
             }];
 
@@ -80,7 +80,7 @@ function update(socket){
     socket.on("update", function (receivedData) {
         values[0]["r"] = receivedData[0]["light"]/5;
         values[1]["r"] = receivedData[0]["sound"];
-        values[2]["r"] = receivedData[0]["temperature"];
+        values[2]["r"] = receivedData[0]["temperature"]*1.8;
 
         reDraw();
     });
@@ -109,8 +109,14 @@ function draw(){
         .attr("cy", function(d){
             return d.y;
         })
-        .attr("r", function (d){
-            return d.r;
+        .attr("r", function (d, i) {
+            if (i == 0) {
+                return d.r;
+            } else if (i == 1){
+                return d.r;
+            } else if (i == 2){
+                return (d.r);
+            }
         })
         .style("fill", function(d){
             return d.color;
@@ -142,8 +148,10 @@ function draw(){
         .text(function (d, i){
             if (i == 0){
                 return d.r * 5;
-            } else {
+            } else if(i == 1) {
                 return d.r;
+            } else if (i == 2){
+                return d.r / 1.8;
             }
         })
         .attr("font-family", "sans-serif")
@@ -212,9 +220,11 @@ function reDraw(){
 
     circles
         .data(values)
-        .attr("r", function (d){
+        .transition()
+        .attr("r", function (d, i){
             return d.r;
-        });
+        })
+        .duration(800);
 
     var labels = d3.selectAll("text");
 
@@ -223,8 +233,10 @@ function reDraw(){
         .text(function (d, i){
             if (i == 0){
                 return d.r * 5;
-            } else {
+            } else if(i == 1) {
                 return d.r;
+            } else if (i == 2){
+                return d.r / 1.8;
             }
         });
 }

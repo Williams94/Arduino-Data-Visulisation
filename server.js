@@ -87,7 +87,7 @@ function arduinoSerialConnection(debug)
 
             console.log(sensorValues + " " + sensorValues.length);
 
-            if (sensorValues.length == 36){
+            if (sensorValues.length == 36 || sensorValues.length == 35){
                 db.insert(db, sensorValues);
                 sensorValues = "";
                 if(connected){
