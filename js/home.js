@@ -5,31 +5,33 @@ $("#about").click(function(){
     window.location.href='/about.html';
 });
 
+// #FF4F64
+
 var socket;
 var values = [];
-var legendX = 50;
-var legendY = 80;
+var legendX = 30;
+var legendY = 60;
 var legendValues = [
     {
         "name" : "- light (lux)",
         "x" : legendX,
         "y" : legendY,
         "r" : 10,
-        "color" : "yellow"
+        "color" : "#FCFC95"
     } ,
     {
         "name" : "- temperature (°C)",
         "x" : legendX,
         "y" : legendY + 30,
         "r" : 10,
-        "color" : "red"
+        "color" : "#ff9999"
     } ,
     {
         "name" : "- sound (dB)",
         "x" : legendX,
         "y" : legendY + 60,
         "r" : 10,
-        "color" : "blue"
+        "color" : "#ACC5CD"
     }
 
 ];
@@ -47,25 +49,25 @@ function socketInit(){
         values = [
             {
                 "name" : "light",
-                "x" : 150,
-                "y" : 150,
+                "x" : 250,
+                "y" : 250,
                 "r" : (receivedData[0]["light"]/5),
-                "color" : "yellow"
+                "color" : legendValues[0]["color"]
 
             },
             {
                 "name" : "sound",
-                "x" : 450,
-                "y" : 150,
+                "x" : 600,
+                "y" : 250,
                 "r" : receivedData[0]["sound"],
-                "color" : "blue"
+                "color" : legendValues[2]["color"]
             },
             {
                 "name" : "temp",
-                "x" : 750,
-                "y" : 150,
+                "x" : 850,
+                "y" : 250,
                 "r" : (receivedData[0]["temperature"] * 1.8),
-                "color" : "red"
+                "color" : legendValues[1]["color"]
             }];
 
         drawCircles();
@@ -95,7 +97,7 @@ function drawCircles(){
     body = d3.select(".jumbotron");
 
     svg = body.append("svg")
-        .attr("width", jumbotron.width() - 250)
+        .attr("width", jumbotron.width() - 200)
         .attr("height", jumbotron.height());
 
     var circles = svg.selectAll(".circle")
@@ -157,7 +159,7 @@ function drawCircles(){
             } else if(i == 1) {
                 return d.r;
             } else if (i == 2){
-                return d.r / 1.8;
+                return Math.floor(d.r / 1.8);
             }
         })
         .attr("font-family", "sans-serif")
@@ -179,13 +181,14 @@ function drawBars(){
     body = d3.select(".jumbotron");
 
     var width = jumbotron.width();
-    var height = 50;
-    var padding = 10;
+    var height = 40;
+    var xPadding = 10;
+    var yPadding = 50;
 
     var barSVG = body.append("svg")
         .attr("class", ".barsvg")
         .attr("width", width)
-        .attr("height", height);
+        .attr("height", height  + yPadding);
 
     var barsContainer = barSVG.selectAll(".rect")
         .append("rect")
@@ -210,7 +213,7 @@ function drawBars(){
         .attr("class", ".bars")
         .attr("x", function (d, i){
             if (i == 0) {
-                return padding;
+                return xPadding;
             } else if (i == 1){
                 return (width/3);
             } else if (i == 2){
@@ -218,15 +221,15 @@ function drawBars(){
             }
         })
         .attr("y", function (d){
-            return 0;
+            return yPadding;
         })
         .attr("width", function (d, i){
             if (i == 0) {
-                return (width/3) - padding*2;
+                return (width/3) - xPadding*2;
             } else if (i == 1){
-                return (width/3) - padding;
+                return (width/3) - xPadding;
             } else if (i == 2){
-                return (width/3) - padding;
+                return (width/3) - xPadding;
             }
         })
         .attr("height", function(d){
@@ -234,14 +237,91 @@ function drawBars(){
         })
         .attr("rx", "20")
         .attr("ry","20")
-        .style("fill", "lightblue")
-        .style("border", "1px dashed blue");
+        .style("border", "1px solid black")
+        .style("fill",  function (d, i){
+            if (i == 0) {
+                return "#F8D040";
+            } else if (i == 1){
+                return (width/3);
+            } else if (i == 2){
+                return "#ff4d4d";
+            }
+        });
+
+    barSVG.selectAll(".barsContainer")
+        .data(values)
+        .enter()
+        .append("rect")
+        .attr("class", ".dataBars")
+        .attr("x", function (d, i){
+            if (i == 0) {
+                return xPadding;
+            } else if (i == 1){
+                return (width/3);
+            } else if (i == 2){
+                return (width - width/3);
+            }
+        })
+        .attr("y", function (d){
+            return yPadding;
+        })
+        /*.attr("width", function (d, i){
+            if (i == 0) {
+                return ((width/3) - xPadding*2) - (d.r / 1000);
+            } else if (i == 1){
+                return ((width/3) - xPadding);
+            } else if (i == 2){
+                return ((width/3) - xPadding);
+            }
+        })*/
+        .attr("width", function (d, i){
+            if (i == 0) {
+                return ((d.r*5) / 3) + 30;
+            } else if (i == 1){
+                return ((d.r * 3));
+            } else if (i == 2){
+                return ((d.r * 5));
+            }
+        })
+        .attr("height", function(d){
+            return height;
+        })
+        .attr("rx", "20")
+        .attr("ry","20")
+        .style("fill", function (d, i) {
+            if (i == 0) {
+                return d.color;
+            } else if (i == 1) {
+                return d.color;
+            } else if (i == 2) {
+                return d.color;
+            }
+        });
+
+    barSVG.selectAll(".dataBars")
+        .data(legendValues)
+        .enter()
+        .append("text")
+        .attr("class", ".legendText")
+        .attr("x", function (d){
+            return d.x + 20;
+        })
+        .attr("y", function (d){
+            return d.y + 5;
+        })
+        .text(function (d){
+            return d.name;
+        })
+        .attr("font-family", "sans-serif")
+        .attr("font-size", "18px")
+        .attr("fill", "black");
+
 }
 
 function drawLegend(){
 
     var legendSVG = body.append("svg")
-        .attr("width", 250 )
+        .attr("width", 200)
         .attr("height", jumbotron.height())/*
         .style("border-left", "1px dashed blue")*/;
 
@@ -279,7 +359,7 @@ function drawLegend(){
             return d.name;
         })
         .attr("font-family", "sans-serif")
-        .attr("font-size", "20px")
+        .attr("font-size", "18px")
         .attr("fill", "black");
 
     var legendTitle = legendSVG.selectAll(".legendTitle")
@@ -298,6 +378,10 @@ function drawLegend(){
 
 
 function reDraw(){
+
+    var duration = 800;
+
+
     var circles = d3.selectAll("circle");
 
     circles
@@ -316,7 +400,7 @@ function reDraw(){
                 return (d.r);
             }
         })
-        .duration(800);
+        .duration(duration);
 
     var labels = d3.selectAll("text");
 
@@ -328,10 +412,31 @@ function reDraw(){
             } else if(i == 1) {
                 return d.r;
             } else if (i == 2){
-                return d.r / 1.8;
+                return Math.floor(d.r / 1.8);
             }
         });
+
+    var width = jumbotron.width();
+    var height = 40;
+    var padding = 10;
+
+    var bars = d3.selectAll(".dataBars");
+
+    bars
+        .data(values)
+        .transition()
+        .attr("width", function (d, i){
+            if (i == 0) {
+                return ((d.r*5) / 3) + 30;
+            } else if (i == 1){
+                return ((d.r * 3));
+            } else if (i == 2){
+                return ((d.r * 5));
+            }
+        })
+        .duration(duration);
 }
+
 
 window.onload = function() {
     socketInit();
