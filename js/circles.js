@@ -15,6 +15,8 @@ function drawCircles(){
         .enter()
         .append("circle");
 
+    /**********  Circle **********************/
+
     circles
         .attr("class", ".circle")
         .attr("cx", function(d) {
@@ -39,6 +41,8 @@ function drawCircles(){
         .style("fill", function(d){
             return d.color;
         });
+
+    /**********  Circle Labels **********************/
 
     svg.selectAll(".circleLabel")
         .data(values)

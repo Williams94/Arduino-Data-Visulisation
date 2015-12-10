@@ -8,6 +8,7 @@ function drawLegend(){
         .attr("height", jumbotron.height())/*
      .style("border-left", "1px dashed blue")*/;
 
+    /**********  Legend Circles **********************/
 
     var legend = legendSVG.selectAll(".legend")
         .data(legendValues)
@@ -27,6 +28,8 @@ function drawLegend(){
             return d.color;
         });
 
+    /**********  Legend Text **********************/
+
     var legendText = legendSVG.selectAll(".legendText")
         .data(legendValues)
         .enter()
@@ -44,6 +47,8 @@ function drawLegend(){
         .attr("font-family", "sans-serif")
         .attr("font-size", "18px")
         .attr("fill", "black");
+
+    /**********  Legend Title **********************/
 
     var legendTitle = legendSVG.selectAll(".legendTitle")
         .data([1])

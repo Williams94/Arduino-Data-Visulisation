@@ -9,6 +9,12 @@
 @background-color: #90D4F7;
 @jumbotron-background: white;
 
+.setShadow {
+  -webkit-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+}
+
 html, body {
   height: 95%;
   background-color: @background-color;
@@ -27,6 +33,7 @@ html, body {
 #signin-form {
   padding: 150px;
   background-color: rgb(238, 238, 238);
+  .setShadow;
 }
 
 .form-control {
@@ -41,6 +48,9 @@ html, body {
 #jumbotron-about {
   min-height: 10%;
   margin: 10% 20% 1% 20%;
+  border: 1px dashed blue;
+  background-color: @jumbotron-background;
+  .setShadow;
 }
 
 #jumbotron-home {
@@ -50,6 +60,7 @@ html, body {
   min-height: 70%;
   border: 1px dashed blue;
   background-color: @jumbotron-background;
+  .setShadow;
 }
 
 .legend {

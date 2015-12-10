@@ -7,12 +7,14 @@ function drawBars(){
     var width = jumbotron.width();
     var height = 40;
     var xPadding = 10;
-    var yPadding = 50;
+    var yPadding = 100;
 
     var barSVG = body.append("svg")
         .attr("class", ".barsvg")
         .attr("width", width)
         .attr("height", height  + yPadding);
+
+    /*****************  Bars Container **********************/
 
     var barsContainer = barSVG.selectAll(".rect")
         .append("rect")
@@ -29,6 +31,9 @@ function drawBars(){
         .attr("height", function(d){
             return height;
         });
+
+
+    /*****************  Background Bars **********************/
 
     var bars = barSVG.selectAll(".barsContainer")
         .data(values)
@@ -72,6 +77,8 @@ function drawBars(){
             }
         });
 
+    /*****************  Measurement Bars **********************/
+
     var movingBars = barSVG.selectAll(".barsContainer")
         .data(values)
         .enter()
@@ -89,15 +96,6 @@ function drawBars(){
         .attr("y", function (d){
             return yPadding;
         })
-        /*.attr("width", function (d, i){
-         if (i == 0) {
-         return ((width/3) - xPadding*2) - (d.r / 1000);
-         } else if (i == 1){
-         return ((width/3) - xPadding);
-         } else if (i == 2){
-         return ((width/3) - xPadding);
-         }
-         })*/
         .attr("width", function (d, i){
             if (i == 0) {
                 return ((d.r*5) / 3) + 30;
@@ -122,6 +120,8 @@ function drawBars(){
             }
         });
 
+    /****************  Bar Text  ***************************/
+
     var barText = barSVG.selectAll("dataBars")
         .data(values)
         .enter()
@@ -133,7 +133,7 @@ function drawBars(){
             } else if (i == 1){
                 return (width/3) + (d.r * 3) - 60;
             } else if (i == 2){
-                return (width - width/3) + (d.r * 5) - 55;
+                return (width - width/3) + (d.r * 5) - 60;
             }
         })
         .attr("y", function (d){
@@ -145,6 +145,8 @@ function drawBars(){
         .attr("font-family", "sans-serif")
         .attr("font-size", "18px")
         .attr("fill", "black");
+
+    /*****************  Arrow Head *****************************/
 
     var defs = svg.append("defs");
 
@@ -162,7 +164,11 @@ function drawBars(){
         .attr("d", "M0,-5L10,0L0,5")
         .attr("class","arrowHead");
 
-    var barArrows = barSVG.selectAll("dataBars")
+    /**********  Lines with Arrow Heads **********************/
+
+    var barArrows = barSVG.selectAll("dataBars");
+
+    barArrows
         .data(values)
         .enter()
         .append("line")
@@ -170,24 +176,52 @@ function drawBars(){
         .attr("marker-end", "url(#arrow)")
         .attr("x1", function (d, i){
             if (i == 0) {
-                return ((d.r*5) / 3);
+                return ((d.r*5) / 3) + 42;
             } else if (i == 1) {
                 return (width/3) + (d.r * 3);
             } else if (i == 2) {
                 return (width - width/3) + (d.r * 5);
             }
         })
-        .attr("y1", 0)
+        .attr("y1", height + 10)
         .attr("x2", function (d, i){
             if (i == 0) {
-                return ((d.r*5) / 3);
+                return ((d.r*5) / 3) + 42;
             } else if (i == 1) {
                 return (width/3) + (d.r * 3);
             } else if (i == 2) {
                 return (width - width/3) + (d.r * 5);
             }
         })
-        .attr("y2", 20)
+        .attr("y2", yPadding)
         .attr("stroke-width", 5)
         .attr("stroke", "black");
+
+    /**********  Arrow Text **********************/
+    var arrowText = barSVG.selectAll("arrow");
+
+    arrowText
+        .data(values)
+        .enter()
+        .append("text")
+        .attr("class", "arrowText")
+        .attr("x", function (d, i){
+            if (i == 0) {
+                return ((d.r*5) / 3) + 42;
+            } else if (i == 1) {
+                return (width/3) + (d.r * 3);
+            } else if (i == 2) {
+                return (width - width/3) + (d.r * 5);
+            }
+        })
+        .attr("y", function (d){
+            return height;
+        })
+        .text(function (d){
+            return d.name;
+        })
+        .attr("font-family", "sans-serif")
+        .attr("font-size", "18px")
+        .attr("fill", "black");
+
 }
