@@ -7,7 +7,7 @@ $("#about").click(function(){
 
 var socket;
 var values = [];
-var legendX = 900;
+var legendX = 50;
 var legendY = 80;
 var legendValues = [
     {
@@ -35,6 +35,7 @@ var legendValues = [
 ];
 
 var jumbotron = $(".jumbotron");
+var width = jumbotron.width();
 
 var body;
 var svg;
@@ -50,6 +51,7 @@ function socketInit(){
                 "y" : 150,
                 "r" : (receivedData[0]["light"]/5),
                 "color" : "yellow"
+
             },
             {
                 "name" : "sound",
@@ -60,24 +62,25 @@ function socketInit(){
             },
             {
                 "name" : "temp",
-                "x" : 650,
+                "x" : 750,
                 "y" : 150,
                 "r" : (receivedData[0]["temperature"] * 1.8),
                 "color" : "red"
             }];
 
-        draw();
+        drawCircles();
+        drawLegend();
+        drawBars();
 
-        update(socket);
+        updateValues(socket);
     });
 }
 
-function update(socket){
+function updateValues(socket){
     socket.on("newValue", function(){
-        console.log("new value");
-        socket.emit("update");
+        socket.emit("updateValues");
     });
-    socket.on("update", function (receivedData) {
+    socket.on("updateValues", function (receivedData) {
         values[0]["r"] = receivedData[0]["light"]/5;
         values[1]["r"] = receivedData[0]["sound"];
         values[2]["r"] = receivedData[0]["temperature"]*1.8;
@@ -86,22 +89,21 @@ function update(socket){
     });
 }
 
-function draw(){
+function drawCircles(){
     console.log(values);
 
     body = d3.select(".jumbotron");
 
     svg = body.append("svg")
-        .attr("width", jumbotron.width())
-        .attr("height", jumbotron.height())
-        .style("border", "1px solid black");
+        .attr("width", jumbotron.width() - 250)
+        .attr("height", jumbotron.height());
 
     var circles = svg.selectAll(".circle")
         .data(values)
         .enter()
         .append("circle");
 
-    var circleAtt = circles
+        circles
         .attr("class", ".circle")
         .attr("cx", function(d) {
             return d.x;
@@ -111,7 +113,11 @@ function draw(){
         })
         .attr("r", function (d, i) {
             if (i == 0) {
-                return d.r;
+                if (d.r < 100){
+                    return 30;
+                } else {
+                    return d.r;
+                }
             } else if (i == 1){
                 return d.r;
             } else if (i == 2){
@@ -122,14 +128,14 @@ function draw(){
             return d.color;
         });
 
-    var circleLabels = svg.selectAll(".circleLabel")
+        svg.selectAll(".circleLabel")
         .data(values)
         .enter()
         .append("text")
         .attr("class", ".circleLabel")
         .attr("x", function (d, i) {
             if (i == 0) {
-                return d.x - 20;
+                return d.x - 13;
             } else if (i == 1){
                 return d.x - 12;
             } else if (i == 2){
@@ -138,7 +144,7 @@ function draw(){
         })
         .attr("y", function (d, i) {
             if (i == 0) {
-                return d.y + 10;
+                return d.y + 9;
             } else if (i == 1){
                 return d.y + 8;
             } else if (i == 2){
@@ -166,7 +172,81 @@ function draw(){
             }
         });
 
-    var legend = svg.selectAll(".legend")
+
+}
+
+function drawBars(){
+    body = d3.select(".jumbotron");
+
+    var width = jumbotron.width();
+    var height = 50;
+    var padding = 10;
+
+    var barSVG = body.append("svg")
+        .attr("class", ".barsvg")
+        .attr("width", width)
+        .attr("height", height);
+
+    var barsContainer = barSVG.selectAll(".rect")
+        .append("rect")
+        .attr("class", ".barsContainer")
+        .attr("x", function (d){
+            return 0;
+        })
+        .attr("y", function (d){
+            return 0;
+        })
+        .attr("width", function (d){
+            return width;
+        })
+        .attr("height", function(d){
+            return height;
+        });
+
+    var bars = barSVG.selectAll(".barsContainer")
+        .data(values)
+        .enter()
+        .append("rect")
+        .attr("class", ".bars")
+        .attr("x", function (d, i){
+            if (i == 0) {
+                return padding;
+            } else if (i == 1){
+                return (width/3);
+            } else if (i == 2){
+                return (width - width/3);
+            }
+        })
+        .attr("y", function (d){
+            return 0;
+        })
+        .attr("width", function (d, i){
+            if (i == 0) {
+                return (width/3) - padding*2;
+            } else if (i == 1){
+                return (width/3) - padding;
+            } else if (i == 2){
+                return (width/3) - padding;
+            }
+        })
+        .attr("height", function(d){
+            return height;
+        })
+        .attr("rx", "20")
+        .attr("ry","20")
+        .style("fill", "lightblue")
+        .style("border", "1px dashed blue");
+}
+
+function drawLegend(){
+
+    var legendSVG = body.append("svg")
+        .attr("width", 250 )
+        .attr("height", jumbotron.height())/*
+        .style("border-left", "1px dashed blue")*/;
+
+
+    var legend = legendSVG.selectAll(".legend")
         .data(legendValues)
         .enter()
         .append("circle")
@@ -184,7 +264,7 @@ function draw(){
             return d.color;
         });
 
-    var legendText = svg.selectAll(".legendText")
+    var legendText = legendSVG.selectAll(".legendText")
         .data(legendValues)
         .enter()
         .append("text")
@@ -202,7 +282,7 @@ function draw(){
         .attr("font-size", "20px")
         .attr("fill", "black");
 
-    var legendTitle = svg.selectAll(".legendTitle")
+    var legendTitle = legendSVG.selectAll(".legendTitle")
         .data([1])
         .enter()
         .append("text")
@@ -215,6 +295,8 @@ function draw(){
         .attr("fill", "black");
 }
 
+
+
 function reDraw(){
     var circles = d3.selectAll("circle");
 
@@ -222,7 +304,17 @@ function reDraw(){
         .data(values)
         .transition()
         .attr("r", function (d, i){
-            return d.r;
+            if (i == 0) {
+                if (d.r < 100){
+                    return d.r * 2;
+                } else {
+                    return d.r;
+                }
+            } else if (i == 1){
+                return d.r;
+            } else if (i == 2){
+                return (d.r);
+            }
         })
         .duration(800);
 

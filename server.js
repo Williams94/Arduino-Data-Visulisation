@@ -50,10 +50,9 @@ function webSocket(httpServer, debug)
             socket.emit("data", values);
         });
 
-        socket.on("update", function (){
-            console.log("updating");
+        socket.on("updateValues", function (){
            db.fetch(1, function(values){
-              socket.emit("update", values);
+              socket.emit("updateValues", values);
            });
         });
 
@@ -84,8 +83,6 @@ function arduinoSerialConnection(debug)
             sensorValues = (date.getUTCDate()<10?'0':'') + date.getUTCDate() + "/" + "12" /*date.getMonth()*/ + "/" + date.getFullYear() + " "
                             + date.getHours() + ":" + (date.getMinutes()<10?'0':'') + date.getMinutes() + " "
                             + data.toString().trim();
-
-            console.log(sensorValues + " " + sensorValues.length);
 
             if (sensorValues.length == 36 || sensorValues.length == 35){
                 db.insert(db, sensorValues);

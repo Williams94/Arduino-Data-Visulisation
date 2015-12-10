@@ -26,7 +26,9 @@ function startDatabase(){
 }
 
 var insertSensorValue = function(db, values) {
+    while(!connected){
 
+    }
     var date = values.substring(0,10).trim();
     var time = values.substring(10, values.indexOf('L')-1).trim();
     var light = values.substring(values.indexOf('L')+2, values.indexOf('T')).trim();
