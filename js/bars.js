@@ -36,7 +36,7 @@ function drawBars(){
     /*****************  Background Bars **********************/
 
     var bars = barSVG.selectAll(".barsContainer")
-        .data(values)
+        .data([1, 2, 3, 4])
         .enter()
         .append("rect")
         .attr("class", ".bars")
@@ -63,21 +63,22 @@ function drawBars(){
         })
         .attr("height", function(d){
             return height;
-        })
-        .attr("rx", "20")
-        .attr("ry","20")
+        })/*
+         .attr("rx", "20")
+         .attr("ry","20")*/
         .style("border", "1px solid black")
         .style("fill",  function (d, i){
             if (i == 0) {
                 return "#F8D040";
             } else if (i == 1){
-                return (width/3);
+                return "#6666ff";
             } else if (i == 2){
                 return "#ff4d4d";
             }
         });
 
     /*****************  Measurement Bars **********************/
+
 
     var movingBars = barSVG.selectAll(".barsContainer")
         .data(values)
@@ -94,11 +95,11 @@ function drawBars(){
             }
         })
         .attr("y", function (d){
-            return yPadding;
+            return yPadding + 6;
         })
         .attr("width", function (d, i){
             if (i == 0) {
-                return ((d.r*5) / 3) + 30;
+                return ((d.r) / 2) + 30;
             } else if (i == 1){
                 return ((d.r * 3));
             } else if (i == 2){
@@ -106,10 +107,10 @@ function drawBars(){
             }
         })
         .attr("height", function(d){
-            return height;
-        })
+            return height/1.5;
+        })/*
         .attr("rx", "20")
-        .attr("ry","20")
+        .attr("ry","20")*/
         .style("fill", function (d, i) {
             if (i == 0) {
                 return d.color;
@@ -119,7 +120,6 @@ function drawBars(){
                 return d.color;
             }
         });
-
     /****************  Bar Text  ***************************/
 
     var barText = barSVG.selectAll("dataBars")
@@ -129,7 +129,7 @@ function drawBars(){
         .attr("class", "barText")
         .attr("x", function (d, i){
             if (i == 0) {
-                return ((d.r*5) / 3) - 10;
+                return ((d.r) / 2) - 10;
             } else if (i == 1){
                 return (width/3) + (d.r * 3) - 60;
             } else if (i == 2){
@@ -143,7 +143,7 @@ function drawBars(){
             return d.name;
         })
         .attr("font-family", "sans-serif")
-        .attr("font-size", "18px")
+        .attr("font-size", "20px")
         .attr("fill", "black");
 
     /*****************  Arrow Head *****************************/
@@ -176,7 +176,7 @@ function drawBars(){
         .attr("marker-end", "url(#arrow)")
         .attr("x1", function (d, i){
             if (i == 0) {
-                return ((d.r*5) / 3) + 42;
+                return ((d.r) / 2) + 42;
             } else if (i == 1) {
                 return (width/3) + (d.r * 3);
             } else if (i == 2) {
@@ -186,7 +186,7 @@ function drawBars(){
         .attr("y1", height + 10)
         .attr("x2", function (d, i){
             if (i == 0) {
-                return ((d.r*5) / 3) + 42;
+                return ((d.r) / 2) + 42;
             } else if (i == 1) {
                 return (width/3) + (d.r * 3);
             } else if (i == 2) {
@@ -207,7 +207,7 @@ function drawBars(){
         .attr("class", "arrowText")
         .attr("x", function (d, i){
             if (i == 0) {
-                return ((d.r*5) / 3) + 42;
+                return ((d.r) / 2) + 42;
             } else if (i == 1) {
                 return (width/3) + (d.r * 3);
             } else if (i == 2) {
@@ -221,7 +221,7 @@ function drawBars(){
             return d.name;
         })
         .attr("font-family", "sans-serif")
-        .attr("font-size", "18px")
+        .attr("font-size", "20px")
         .attr("fill", "black");
 
 }

@@ -13,11 +13,7 @@ function reDraw(){
         .transition()
         .attr("r", function (d, i){
             if (i == 0) {
-                if (d.r < 100){
-                    return d.r * 2;
-                } else {
-                    return d.r;
-                }
+                    return d.r/4;
             } else if (i == 1){
                 return d.r;
             } else if (i == 2){
@@ -32,13 +28,14 @@ function reDraw(){
         .data(values)
         .text(function (d, i){
             if (i == 0){
-                return d.r * 5;
+                return d.r;
             } else if(i == 1) {
                 return d.r;
             } else if (i == 2){
                 return Math.floor(d.r / 1.8);
             }
         });
+
 
     var width = jumbotron.width();
     var height = 40;
@@ -51,7 +48,7 @@ function reDraw(){
         .transition()
         .attr("width", function (d, i){
             if (i == 0) {
-                return ((d.r*5) / 3) + 30;
+                return (d.r/2);
             } else if (i == 1){
                 return ((d.r * 3));
             } else if (i == 2){
@@ -67,7 +64,7 @@ function reDraw(){
         .transition()
         .attr("x", function (d, i){
             if (i == 0) {
-                return ((d.r*5) / 3) - 10;
+                return ((d.r) / 2) - 40;
             } else if (i == 1){
                 return (width/3) + (d.r * 3) - 60;
             } else if (i == 2){
@@ -83,7 +80,7 @@ function reDraw(){
         .transition()
         .attr("x1", function (d, i){
             if (i == 0) {
-                return ((d.r*5) / 3) + 42;
+                return (d.r/2) + 10;
             } else if (i == 1) {
                 return (width/3) + (d.r * 3);
             } else if (i == 2) {
@@ -92,7 +89,7 @@ function reDraw(){
         })
         .attr("x2", function (d, i){
             if (i == 0) {
-                return ((d.r*5) / 3) + 42;
+                return (d.r/2) + 10;
             } else if (i == 1) {
                 return (width/3) + (d.r * 3);
             } else if (i == 2) {
@@ -101,5 +98,20 @@ function reDraw(){
         })
         .duration(duration);
 
+    var arrowLabels = d3.selectAll(".arrowText");
+
+        arrowLabels
+            .data(values)
+            .transition()
+            .attr("x", function (d, i){
+                if (i == 0) {
+                    return (d.r/2) + 10;
+                } else if (i == 1) {
+                    return (width/3) + (d.r * 3);
+                } else if (i == 2) {
+                    return (width - width/3) + (d.r * 5);
+                }
+            })
+            .duration(duration);
 
 }

@@ -20,14 +20,14 @@ var legendValues = [
     {
         "name" : "- Temperature (°C)",
         "x" : legendX,
-        "y" : legendY + 30,
+        "y" : legendY + 50,
         "r" : 10,
         "color" : "#ff9999"
     } ,
     {
         "name" : "- Sound (dB)",
         "x" : legendX,
-        "y" : legendY + 60,
+        "y" : legendY + 100,
         "r" : 10,
         "color" : "#ACC5CD"
     }
@@ -47,27 +47,28 @@ function socketInit(){
         values = [
             {
                 "name" : "Light",
-                "x" : 250,
-                "y" : 250,
-                "r" : (receivedData[0]["light"]/5),
+                "x" : 400,
+                "y" : 280,
+                "r" : (receivedData[0]["light"]),
                 "color" : legendValues[0]["color"]
 
             },
             {
                 "name" : "Sound",
-                "x" : 600,
-                "y" : 250,
+                "x" : 800,
+                "y" : 280,
                 "r" : receivedData[0]["sound"],
                 "color" : legendValues[2]["color"]
             },
             {
                 "name" : "Temp",
-                "x" : 850,
-                "y" : 250,
+                "x" : 1150,
+                "y" : 280,
                 "r" : (receivedData[0]["temperature"] * 1.8),
                 "color" : legendValues[1]["color"]
             }];
 
+        calmLevel();
         drawCircles();
         drawLegend();
         drawBars();
@@ -81,7 +82,7 @@ function updateValues(socket){
         socket.emit("updateValues");
     });
     socket.on("updateValues", function (receivedData) {
-        values[0]["r"] = receivedData[0]["light"]/5;
+        values[0]["r"] = receivedData[0]["light"];
         values[1]["r"] = receivedData[0]["sound"];
         values[2]["r"] = receivedData[0]["temperature"]*1.8;
 

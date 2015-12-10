@@ -4,7 +4,7 @@
 
 var server = require("./server");
 var router = require("./router");
-var requestHandler = require("./requestHandlers");
+var requestHandler = require("./handlers");
 var database = require("./database");
 
 var debug = true;

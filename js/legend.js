@@ -1,11 +1,12 @@
 /**
  * Created by rbwilliams on 10/12/2015.
  */
+
 function drawLegend(){
 
     var legendSVG = body.append("svg")
-        .attr("width", 200)
-        .attr("height", jumbotron.height())/*
+        .attr("width", 350)
+        .attr("height", jumbotron.height() - 40)/*
      .style("border-left", "1px dashed blue")*/;
 
     /**********  Legend Circles **********************/
@@ -44,8 +45,8 @@ function drawLegend(){
         .text(function (d){
             return d.name;
         })
-        .attr("font-family", "sans-serif")
-        .attr("font-size", "18px")
+        .attr("font-family", "Verdana, Geneva, sans-serif")
+        .attr("font-size", "30px")
         .attr("fill", "black");
 
     /**********  Legend Title **********************/
@@ -58,7 +59,7 @@ function drawLegend(){
         .attr("x", legendValues[0]["x"] - 15)
         .attr("y", legendValues[0]["y"] - 30)
         .text("Legend:")
-        .attr("font-family", "sans-serif")
-        .attr("font-size", "20px")
+        .attr("font-family", "Verdana, Geneva, sans-serif")
+        .attr("font-size", "30px")
         .attr("fill", "black");
 }

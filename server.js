@@ -84,7 +84,8 @@ function arduinoSerialConnection(debug)
                             + date.getHours() + ":" + (date.getMinutes()<10?'0':'') + date.getMinutes() + " "
                             + data.toString().trim();
 
-            if (sensorValues.length == 36 /*|| sensorValues.length == 35*/){
+            //console.log(sensorValues + " " + sensorValues.length);
+            if (sensorValues.length == 36 || sensorValues.length == 35){
                 db.insert(db, sensorValues);
                 sensorValues = "";
                 if(connected){

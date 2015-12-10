@@ -1,13 +1,14 @@
 /**
  * Created by rbwilliams on 10/12/2015.
  */
+var svg;
 function drawCircles(){
     console.log(values);
 
     body = d3.select(".jumbotron");
 
     svg = body.append("svg")
-        .attr("width", jumbotron.width() - 200)
+        .attr("width", jumbotron.width() - 450)
         .attr("height", jumbotron.height());
 
     var circles = svg.selectAll(".circle")
@@ -27,10 +28,10 @@ function drawCircles(){
         })
         .attr("r", function (d, i) {
             if (i == 0) {
-                if (d.r < 100){
-                    return d.r * 2;
+                if (d.r < 10){
+                    return 20;
                 } else {
-                    return d.r;
+                    return d.r/4;
                 }
             } else if (i == 1){
                 return d.r;
@@ -51,7 +52,7 @@ function drawCircles(){
         .attr("class", ".circleLabel")
         .attr("x", function (d, i) {
             if (i == 0) {
-                return d.x - 13;
+                return d.x - 15
             } else if (i == 1){
                 return d.x - 12;
             } else if (i == 2){
@@ -69,7 +70,7 @@ function drawCircles(){
         })
         .text(function (d, i){
             if (i == 0){
-                return d.r * 5;
+                return d.r;
             } else if(i == 1) {
                 return d.r;
             } else if (i == 2){
@@ -82,9 +83,9 @@ function drawCircles(){
             if (i == 0) {
                 return "black";
             } else if (i == 1){
-                return "white";
+                return "black";
             } else if (i == 2){
-                return "white";
+                return "black";
             }
         });
 
