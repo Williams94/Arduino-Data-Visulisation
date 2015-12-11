@@ -8,7 +8,8 @@ function drawCircles(){
     body = d3.select(".jumbotron");
 
     svg = body.append("svg")
-        .attr("width", jumbotron.width() - 450)
+        .attr("id", "svg")
+        .attr("width", jumbotron.width() - 600)
         .attr("height", jumbotron.height());
 
     var circles = svg.selectAll(".circle")

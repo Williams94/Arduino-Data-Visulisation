@@ -22,7 +22,6 @@
     } else if (lightSensorValue < 10){
       light = "00" + String(lightSensorValue);
     }else {
-    
       light = String(lightSensorValue);
     }
 

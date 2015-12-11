@@ -13,7 +13,7 @@ function reDraw(){
         .transition()
         .attr("r", function (d, i){
             if (i == 0) {
-                    return d.r/4;
+                return d.r/4;
             } else if (i == 1){
                 return d.r;
             } else if (i == 2){
@@ -50,9 +50,9 @@ function reDraw(){
             if (i == 0) {
                 return (d.r/2);
             } else if (i == 1){
-                return ((d.r * 3));
-            } else if (i == 2){
                 return ((d.r * 5));
+            } else if (i == 2){
+                return ((d.r * 7));
             }
         })
         .duration(duration);
@@ -66,9 +66,9 @@ function reDraw(){
             if (i == 0) {
                 return ((d.r) / 2) - 40;
             } else if (i == 1){
-                return (width/3) + (d.r * 3) - 60;
+                return (width/3) + (d.r * 5) - 70;
             } else if (i == 2){
-                return (width - width/3) + (d.r * 5) - 60;
+                return (width - width/3) + (d.r * 7) - 65;
             }
         })
         .duration(duration);
@@ -82,18 +82,18 @@ function reDraw(){
             if (i == 0) {
                 return (d.r/2) + 10;
             } else if (i == 1) {
-                return (width/3) + (d.r * 3);
+                return (width/3) + (d.r * 5);
             } else if (i == 2) {
-                return (width - width/3) + (d.r * 5);
+                return (width - width/3) + (d.r * 7);
             }
         })
         .attr("x2", function (d, i){
             if (i == 0) {
                 return (d.r/2) + 10;
             } else if (i == 1) {
-                return (width/3) + (d.r * 3);
+                return (width/3) + (d.r * 5);
             } else if (i == 2) {
-                return (width - width/3) + (d.r * 5);
+                return (width - width/3) + (d.r * 7);
             }
         })
         .duration(duration);
@@ -107,11 +107,62 @@ function reDraw(){
                 if (i == 0) {
                     return (d.r/2) + 10;
                 } else if (i == 1) {
-                    return (width/3) + (d.r * 3);
+                    return (width/3) + (d.r * 5);
                 } else if (i == 2) {
-                    return (width - width/3) + (d.r * 5);
+                    return (width - width/3) + (d.r * 7);
                 }
             })
             .duration(duration);
+
+    arrowLabels
+        .data(values)
+        .text(function (d, i){
+            if (i == 0) {
+                if (d.r > 800 ){
+                    return "Too bright";
+                } else if (values[0]["r"] < 100){
+                    return "Too dark";
+                } else {
+                    return "Just right";
+                }
+            } else if (i == 1) {
+                if (values[1]["r"] > 70){
+                    if (values[1]["r"]  > 100){
+                        return "Very Loud";
+                    }
+                    return "Loud";
+                }
+                return "Quiet";
+            } else if (i == 2) {
+                if (values[2]["r"]/1.8 < 18){
+                    return "Too Cold";
+                } else if (values[2]["r"]/1.8 > 30){
+                    return "Too Hot";
+                } else {
+                    return "Warm";
+                }
+            }
+        });
+
+
+
+
+    var calmMeter = d3.selectAll(".calmBar");
+
+    calmMeter
+        .data([1])
+        .transition()
+        .attr("y", function (d){
+            return calmness() + 50;
+        })
+        .duration(duration);
+
+    var calmTitle = d3.selectAll(".calmBarTitle");
+
+    calmTitle
+        .data([1])
+        .text("Calmness:");
+
+
 
 }

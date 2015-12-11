@@ -68,9 +68,9 @@ function socketInit(){
                 "color" : legendValues[1]["color"]
             }];
 
-        calmLevel();
         drawCircles();
         drawLegend();
+        calmLevel();
         drawBars();
 
         updateValues(socket);
