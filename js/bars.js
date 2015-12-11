@@ -245,7 +245,7 @@ function drawBars(){
             }
         })
         .attr("font-family", "sans-serif")
-        .attr("font-size", "20px")
+        .attr("font-size", "25px")
         .attr("fill", "black");
 
     var xValues = barSVG.selectAll("dataBars")
@@ -257,13 +257,13 @@ function drawBars(){
             if (i == 0) {
                 return (10);
             } else if (i == 1){
-                return (width/3);
+                return (width/3) +10;
             } else if (i == 2){
-                return (width - width/3);
+                return (width - width/3) + 10;
             } else if (i == 3){
-                return 620;
+                return 590;
             } else if (i == 4){
-                return (width/3) + 620;
+                return (width/3) + 600;
             } else if ( i == 5){
                 return width - 40;
             }
@@ -291,7 +291,7 @@ function drawBars(){
             } else if (i == 2){
                 return "0";
             } else if (i == 3){
-                return 100;
+                return 1000;
             } else if (i == 4){
                 return 120;
             } else if ( i == 5){
@@ -299,7 +299,7 @@ function drawBars(){
             }
         })
         .attr("font-family", "sans-serif")
-        .attr("font-size", "20px")
+        .attr("font-size", "25px")
         .attr("fill", "black");
 
 }

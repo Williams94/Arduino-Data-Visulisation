@@ -79,7 +79,7 @@ function drawCircles(){
             }
         })
         .attr("font-family", "sans-serif")
-        .attr("font-size", "20px")
+        .attr("font-size", "25px")
         .attr("fill", function (d, i) {
             if (i == 0) {
                 return "black";

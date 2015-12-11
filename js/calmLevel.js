@@ -125,7 +125,7 @@ function calmLevel() {
         .append("text")
         .attr("x", function (d, i){
             if (i == 0){
-                return 28;
+                return 15;
             } else if (i == 1){
                 return 54;
             } else if (i == 2){
@@ -143,7 +143,7 @@ function calmLevel() {
         })
         .text(function (d, i){
             if (i == 0){
-                return "Peacful -";
+                return "Peaceful -";
             } else if (i == 1){
                 return "Calm -";
             } else if ( i == 2){
