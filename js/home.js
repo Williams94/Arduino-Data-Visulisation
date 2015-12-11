@@ -33,6 +33,7 @@ var legendValues = [
     }
 
 ];
+var rotation;
 
 var jumbotron = $(".jumbotron");
 var width = jumbotron.width();
@@ -44,6 +45,7 @@ function socketInit(){
     socket  = io.connect("http://localhost:8080");
 
     socket.on('data', function (receivedData) {
+        console.log(receivedData[0]);
         values = [
             {
                 "name" : "Light",
@@ -68,6 +70,8 @@ function socketInit(){
                 "color" : legendValues[1]["color"]
             }];
 
+        //rotation = receivedData[0]["rotation"];
+
         drawCircles();
         drawLegend();
         calmLevel();
@@ -85,9 +89,19 @@ function updateValues(socket){
         values[0]["r"] = receivedData[0]["light"];
         values[1]["r"] = receivedData[0]["sound"];
         values[2]["r"] = receivedData[0]["temperature"]*1.8;
-
+        //rotation = receivedData[0]["rotation"];
         reDraw();
     });
+}
+
+function rotationSensitivity(){
+    if (rotation > 1000){
+        return - 10;
+    } else if (rotation < 100){
+        return +10;
+    } else {
+        return 10;
+    }
 }
 
 

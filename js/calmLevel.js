@@ -173,23 +173,61 @@ function calmLevel() {
 
 var calmness = function(){
     var calmLevel = 0;
-    if (values[0]["r"] > 800 || values[0]["r"] < 100){
-        console.log("too bright or dark");
-        calmLevel += 150;
-    }
-    if (values[1]["r"] > 70){
-        console.log("loud");
-        calmLevel += 150;
-        if (values[1]["r"]  > 100){
-            console.log("too loud");
+    if (rotation > 1000){
+        if (values[0]["r"] > 600 || values[0]["r"] < 200){
+            console.log("too bright or dark");
             calmLevel += 150;
         }
-    }
-    if (values[2]["r"]/1.8 < 18 || values[2]["r"]/1.8 > 30){
-        console.log("too hot or cold");
-        calmLevel += 150;
+        if (values[1]["r"] > 60){
+            console.log("loud");
+            calmLevel += 150;
+            if (values[1]["r"]  > 90){
+                console.log("too loud");
+                calmLevel += 150;
+            }
+        }
+        if (values[2]["r"]/1.8 < 20 || values[2]["r"]/1.8 > 28){
+            console.log("too hot or cold");
+            calmLevel += 150;
+        }
+    } else if(rotation < 100){
+        if (values[0]["r"] > 900 || values[0]["r"] < 50){
+            console.log("too bright or dark");
+            calmLevel += 150;
+        }
+        if (values[1]["r"] > 80){
+            console.log("loud");
+            calmLevel += 150;
+            if (values[1]["r"]  > 110){
+                console.log("too loud");
+                calmLevel += 150;
+            }
+        }
+        if (values[2]["r"]/1.8 < 16 || values[2]["r"]/1.8 > 32){
+            console.log("too hot or cold");
+            calmLevel += 150;
+        }
+    }else {
+        if (values[0]["r"] > 800 || values[0]["r"] < 100){
+            console.log("too bright or dark");
+            calmLevel += 150;
+        }
+        if (values[1]["r"] > 70){
+            console.log("loud");
+            calmLevel += 150;
+            if (values[1]["r"]  > 100){
+                console.log("too loud");
+                calmLevel += 150;
+            }
+        }
+        if (values[2]["r"]/1.8 < 18 || values[2]["r"]/1.8 > 30){
+            console.log("too hot or cold");
+            calmLevel += 150;
+        }
+
+
     }
 
-  console.log(calmLevel);
+
     return calmLevel;
 };

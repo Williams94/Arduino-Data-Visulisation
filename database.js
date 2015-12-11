@@ -33,19 +33,21 @@ var insertSensorValue = function(db, values) {
     var time = values.substring(10, values.indexOf('L')-1).trim();
     var light = values.substring(values.indexOf('L')+2, values.indexOf('T')).trim();
     var temp = values.substring(values.indexOf('T')+2, values.indexOf('S')).trim();
-    var sound = values.substring(values.indexOf('S')+2).trim();
+    var sound = values.substring(values.indexOf('S')+2/*, values.indexOf('R')*/).trim();
+    //var rotation = values.substring(values.indexOf('R')+2).trim();
 
     collection.insertOne( {
         "date" : date,
         "time" : time,
         "light" : parseInt(light),
         "temperature" : parseInt(temp),
-        "sound" : parseInt(sound)
+        "sound" : parseInt(sound)/*,
+        "rotation" : parseInt(rotation)*/
     }, function(err, result) {
         //assert.equal(err, null);
         //callback(result);
     });
-        console.log("Stored: " + date + " " + time + " "  + light + " " + temp + " " + sound);
+        console.log("Stored: " + date + " " + time + " "  + light + " " + temp + " " + sound/* + " " + rotation*/);
 };
 
 function fetch(amount, callback){
