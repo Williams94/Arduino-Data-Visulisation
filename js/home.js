@@ -38,7 +38,7 @@ var rotation;
 var jumbotron = $(".jumbotron");
 var width = jumbotron.width();
 
-var body;
+var body = d3.select(".jumbotron");
 var svg;
 
 function socketInit(){
@@ -72,8 +72,8 @@ function socketInit(){
 
         //rotation = receivedData[0]["rotation"];
 
-        drawCircles();
         drawLegend();
+        drawCircles();
         calmLevel();
         drawBars();
 

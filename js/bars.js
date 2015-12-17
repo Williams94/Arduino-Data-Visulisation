@@ -197,7 +197,8 @@ function drawBars(){
         .attr("stroke-width", 5)
         .attr("stroke", "black");
 
-    /**********  Arrow Text **********************/
+    /**********  Arrow Text *********************/
+
     var arrowText = barSVG.selectAll("arrow");
 
     arrowText
@@ -268,21 +269,7 @@ function drawBars(){
                 return width - 40;
             }
         })
-        .attr("y", function (d,i){
-            if (i == 0) {
-                return (yPadding - 5);
-            } else if (i == 1){
-                return (yPadding - 5);
-            } else if (i == 2){
-                return (yPadding - 5);
-            } else if (i == 3){
-                return (yPadding - 5);
-            } else if (i == 4){
-                return (yPadding - 5);
-            } else if ( i == 5){
-                return (yPadding - 5);
-            }
-        })
+        .attr("y", (yPadding - 5))
         .text(function (d,i){
             if (i == 0) {
                 return "0";

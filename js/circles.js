@@ -5,8 +5,6 @@ var svg;
 function drawCircles(){
     console.log(values);
 
-    body = d3.select(".jumbotron");
-
     svg = body.append("svg")
         .attr("id", "svg")
         .attr("width", jumbotron.width() - 600)
@@ -20,7 +18,7 @@ function drawCircles(){
     /**********  Circle **********************/
 
     circles
-        .attr("class", ".circle")
+        .attr("class", "circle")
         .attr("cx", function(d) {
             return d.x;
         })
@@ -46,11 +44,11 @@ function drawCircles(){
 
     /**********  Circle Labels **********************/
 
-    svg.selectAll(".circleLabel")
+    svg.selectAll("circleLabel")
         .data(values)
         .enter()
         .append("text")
-        .attr("class", ".circleLabel")
+        .attr("class", "circleLabel")
         .attr("x", function (d, i) {
             if (i == 0) {
                 return d.x - 15

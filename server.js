@@ -78,10 +78,12 @@ function arduinoSerialConnection(debug)
         var sensorValues = "";
 
         serialPort.on('data', function(data) {
+
             var date = new Date();
 
-            sensorValues = (date.getUTCDate()<10?'0':'') + date.getUTCDate() + "/" + "12" /*date.getMonth()*/ + "/" + date.getFullYear() + " "
-                            + date.getHours() + ":" + (date.getMinutes()<10?'0':'') + date.getMinutes() + " "
+            sensorValues = (date.getUTCDate()<10?'0':'') + date.getUTCDate() + "/" + "12" /*date.getMonth()*/ + "/"
+                            + date.getFullYear() + " " + date.getHours() + ":"
+                            + (date.getMinutes()<10?'0':'') + date.getMinutes() + " "
                             + data.toString().trim();
 
             console.log(sensorValues+ " " + sensorValues.length);

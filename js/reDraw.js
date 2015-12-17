@@ -6,7 +6,7 @@ function reDraw(){
     var duration = 800;
 
 
-    var circles = d3.selectAll("circle");
+    var circles = d3.selectAll(".circle");
 
     circles
         .data(values)
@@ -22,7 +22,7 @@ function reDraw(){
         })
         .duration(duration);
 
-    var labels = d3.selectAll("text");
+    var labels = d3.selectAll(".circleLabel");
 
     labels
         .data(values)
