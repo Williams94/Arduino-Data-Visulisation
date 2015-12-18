@@ -72,9 +72,9 @@ function socketInit(){
 
         //rotation = receivedData[0]["rotation"];
 
-        drawLegend();
-        drawCircles();
         calmLevel();
+        drawCircles();
+        drawLegend();
         drawBars();
 
         updateValues(socket);
